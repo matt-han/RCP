@@ -1,0 +1,1 @@
+   Statische_Kennlinie.c 

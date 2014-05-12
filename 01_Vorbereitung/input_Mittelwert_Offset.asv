@@ -1,0 +1,9 @@
+mittel = 0;
+for i = 1:length(Input_AD)
+    mittel = mittel + Input_AD(i,2);
+end
+
+mittel = mittel / length(Input_AD)
+
+
+%% INPUT  ergebnis = 0.1292
