@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  12 MAY 2014 17:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  13 MAY 2014 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -960,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
 [3] (./main.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1027,7 +1027,7 @@ r/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 312041 bytes).
+Output written on main.pdf (14 pages, 312266 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
