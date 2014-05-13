@@ -6,7 +6,7 @@
 %% 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[11pt, a4paper,parskip=half]{report}
+\documentclass[11pt, a4paper,parskip=half]{article}
 %% Übersetzen als Entwurf
 %\usepackage[entwurf]{bhtThesis}
 %% Übersetzen für die Abgabe
@@ -27,7 +27,6 @@
            {ß}{{\ss}}1
 }
 
-%%\usepackage{hyperref}
 
 \usepackage{trsym}
 \usepackage{bytefield}
@@ -72,7 +71,6 @@
   morestring=[b]"
 }
 
-%%\renewcommand{\baselinestretch}{1.05} 
 \begin{document}
 \pagestyle{fancy}
 
@@ -135,28 +133,32 @@ Auflistung aller abgegebenen Dateien\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\newpage
 \tableofcontents %Inhaltsverzeichnis
 
 
 \pagenumbering{arabic}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Die Kapitel der Arbeitw
-\input{kapitel1/ch1.tex} %Einleitung
-\input{kapitel2/ch2.tex} %Raspberry Pi
-\input{kapitel3/ch3.tex} %Android App
-\input{kapitel4/ch4.tex} %Desktop App
-\input{kapitel5/ch5.tex} %Zusammenführung und Ausblick
+\input{kapitel1/ch1.tex} %
+\input{kapitel2/ch2.tex} %
+\input{kapitel3/ch3.tex} %
+\input{kapitel4/ch4.tex} %
+\input{kapitel5/ch5.tex} %
 
+\newpage
 \listoffigures		%Abbildungsverzeichnis
+
+\newpage
 \begin{appendix}
   \input{anhang.tex}
 \end{appendix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Literaturverzeichnis
 
-\clearpage\newpage
-\addcontentsline{toc}{chapter}{Literatur- und Quellenverzeichnis}
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{Literatur- und Quellenverzeichnis}
 \bibliographystyle{IEEEtran}
 \bibliography{bhtThesis}
 

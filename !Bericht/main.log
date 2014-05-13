@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  13 MAY 2014 09:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  13 MAY 2014 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,20 +6,19 @@ entering extended mode
 (./main.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -58,7 +57,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -78,19 +77,19 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@old@col=\dimen109
 \TX@target=\dimen110
 \TX@delta=\dimen111
-\TX@cols=\count89
+\TX@cols=\count88
 \TX@ftn=\toks16
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count90
+\c@tracingmulticols=\count89
 \mult@box=\box26
 \multicol@leftmargin=\dimen112
-\c@unbalance=\count91
-\c@collectmore=\count92
-\doublecol@number=\count93
-\multicoltolerance=\count94
-\multicolpretolerance=\count95
+\c@unbalance=\count90
+\c@collectmore=\count91
+\doublecol@number=\count92
+\multicoltolerance=\count93
+\multicolpretolerance=\count94
 \full@width=\dimen113
 \page@free=\dimen114
 \premulticols=\dimen115
@@ -120,14 +119,14 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count96
-\c@finalcolumnbadness=\count97
+\c@columnbadness=\count95
+\c@finalcolumnbadness=\count96
 \last@try=\dimen117
 \multicolovershoot=\dimen118
 \multicolundershoot=\dimen119
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
-\multicol@sort@counter=\count98
+\multicol@sort@counter=\count97
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -240,17 +239,17 @@ File: amsgen.sty 1999/11/30 v2.0
 )))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/changebar/changebar.sty
 Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
-\cb@nextpoint=\count99
-\cb@topleft=\count100
-\cb@topright=\count101
-\cb@botleft=\count102
-\cb@botright=\count103
-\cb@cnta=\count104
-\cb@cntb=\count105
+\cb@nextpoint=\count98
+\cb@topleft=\count99
+\cb@topright=\count100
+\cb@botleft=\count101
+\cb@botright=\count102
+\cb@cnta=\count103
+\cb@cntb=\count104
 \cb@dima=\dimen121
 \cb@curbarwd=\dimen122
-\cb@page=\count106
-\cb@pagecount=\count107
+\cb@page=\count105
+\cb@pagecount=\count106
 \cb@odd@left=\dimen123
 \cb@odd@right=\dimen124
 \cb@even@left=\dimen125
@@ -262,7 +261,7 @@ Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
 \changebarwidth=\skip47
 \deletebarwidth=\skip48
 \changebarsep=\skip49
-\c@changebargrey=\count108
+\c@changebargrey=\count107
 \cb@write=\write4
 \cb@read=\read2
 \openout4 = `main.cb'.
@@ -568,7 +567,7 @@ Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/05/16 v3.9f Babel common definitions
-\babel@savecnt=\count109
+\babel@savecnt=\count108
 \U@D=\dimen127
 )
 \l@naustrian = a dialect from \language\l@ngerman 
@@ -626,13 +625,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count110
+\inf@bad=\count109
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count111
-\leftroot@=\count112
+\uproot@=\count110
+\leftroot@=\count111
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count113
-\DOTSCASE@=\count114
+\classnum@=\count112
+\DOTSCASE@=\count113
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -641,15 +640,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen129
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count115
-\c@MaxMatrixCols=\count116
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
 \dotsspace@=\muskip10
-\c@parentequation=\count117
-\dspbrk@lvl=\count118
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
 \tag@help=\toks20
-\row@=\count119
-\column@=\count120
-\maxfields@=\count121
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
 \andhelp@=\toks21
 \eqnshift@=\dimen130
 \alignsep@=\dimen131
@@ -683,43 +682,43 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count122
-\c@Blindtext=\count123
-\c@blind@countparstart=\count124
-\blind@countxx=\count125
-\blindtext@numBlindtext=\count126
-\blind@countyy=\count127
-\c@blindlist=\count128
-\c@blindlistlevel=\count129
-\c@blindlist@level=\count130
-\blind@listitem=\count131
-\c@blind@listcount=\count132
-\c@blind@levelcount=\count133
-\blind@mathformula=\count134
-\blind@Mathformula=\count135
-\c@blind@randomcount=\count136
-\c@blind@randommax=\count137
-\c@blind@pangramcount=\count138
-\c@blind@pangrammax=\count139
+\c@blindtext=\count121
+\c@Blindtext=\count122
+\c@blind@countparstart=\count123
+\blind@countxx=\count124
+\blindtext@numBlindtext=\count125
+\blind@countyy=\count126
+\c@blindlist=\count127
+\c@blindlistlevel=\count128
+\c@blindlist@level=\count129
+\blind@listitem=\count130
+\c@blind@listcount=\count131
+\c@blind@levelcount=\count132
+\blind@mathformula=\count133
+\blind@Mathformula=\count134
+\c@blind@randomcount=\count135
+\c@blind@randommax=\count136
+\c@blind@pangramcount=\count137
+\c@blind@pangrammax=\count138
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count140
+\lst@mode=\count139
 \lst@gtempboxa=\box54
 \lst@token=\toks24
-\lst@length=\count141
+\lst@length=\count140
 \lst@currlwidth=\dimen136
-\lst@column=\count142
-\lst@pos=\count143
+\lst@column=\count141
+\lst@pos=\count142
 \lst@lostspace=\dimen137
 \lst@width=\dimen138
-\lst@newlines=\count144
-\lst@lineno=\count145
+\lst@newlines=\count143
+\lst@lineno=\count144
 \lst@maxwidth=\dimen139
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count146
-\lst@skipnumbers=\count147
+\c@lstnumber=\count145
+\lst@skipnumbers=\count146
 \lst@framebox=\box55
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
@@ -736,15 +735,15 @@ Package: bytefield 2011/06/19 v2.1 Network protocol diagrams
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count148
-\calc@Bcount=\count149
+\calc@Acount=\count147
+\calc@Bcount=\count148
 \calc@Adimen=\dimen140
 \calc@Bdimen=\dimen141
 \calc@Askip=\skip62
 \calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count150
+\calc@Ccount=\count149
 \calc@Cskip=\skip64
 )
 \bytefield@height=\skip65
@@ -756,8 +755,8 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \units@tall=\skip70
 \units@high=\skip71
 \header@xpos=\skip72
-\c@header@val=\count151
-\c@max@header@val=\count152
+\c@header@val=\count150
+\c@max@header@val=\count151
 \curly@box=\box57
 \wordlabelr@start=\skip73
 \wordlabelr@end=\skip74
@@ -774,16 +773,16 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip81
 \LTpre=\skip82
 \LTpost=\skip83
-\LTchunksize=\count153
+\LTchunksize=\count152
 \LTcapwidth=\dimen142
 \LT@head=\box59
 \LT@firsthead=\box60
 \LT@foot=\box61
 \LT@lastfoot=\box62
-\LT@cols=\count154
-\LT@rows=\count155
-\c@LT@tables=\count156
-\c@LT@chunks=\count157
+\LT@cols=\count153
+\LT@rows=\count154
+\c@LT@tables=\count155
+\c@LT@chunks=\count156
 \LT@p@ftn=\toks25
 )
 
@@ -793,41 +792,41 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 76.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 74.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count158
+\scratchcounter=\count157
 \scratchdimen=\dimen143
 \scratchbox=\box63
-\nofMPsegments=\count159
-\nofMParguments=\count160
+\nofMPsegments=\count158
+\nofMParguments=\count159
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count161
+\MPscratchCnt=\count160
 \MPscratchDim=\dimen144
-\MPnumerator=\count162
-\makeMPintoPDFobject=\count163
+\MPnumerator=\count161
+\makeMPintoPDFobject=\count162
 \everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -888,7 +887,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count164
+\c@lstlisting=\count163
 
 (./titlepage_julian.tex
 <pictures/BHT-Logo-Basis.pdf, id=1, 303.39667pt x 99.95987pt>
@@ -917,7 +916,12 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictu
 res/BHT-Logo-Basis.pdf>])
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
@@ -936,12 +940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 102.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 100.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -951,72 +950,45 @@ File: pictures/elektrischeSchaltung.pdf Graphic file (type pdf)
 
 <use pictures/elektrischeSchaltung.pdf>
 Package pdftex.def Info: pictures/elektrischeSchaltung.pdf used on input line 1
-15.
+13.
 (pdftex.def)             Requested size: 426.79134pt x 603.97353pt.
  [1] [2 <./pictures/elektrischeSchaltung.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-[3] (./main.toc
+[3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 137.
+ (./main.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (./kapitel1/ch1.tex [1
-
-]
-Kapitel 1.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
-[2
-
-]) (./kapitel2/ch2.tex [3]
-Kapitel 2.
-) (./kapitel3/ch3.tex [4
-
-]
-Kapitel 3.
-) (./kapitel4/ch4.tex [5
-
-]
-Kapitel 4.
-) (./kapitel5/ch5.tex [6
-
-]
-Kapitel 5.
-) [7
-
-] (./main.lof)
+ (./kapitel1/ch1.tex [1]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
+) (./kapitel2/ch2.tex [2])
+(./kapitel3/ch3.tex [3]) (./kapitel4/ch4.tex [4]) (./kapitel5/ch5.tex [5])
+[6] (./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- (./anhang.tex [8
+ [7] (./anhang.tex) [8] (./main.bbl
 
-]
-Anhang A.
+LaTeX Warning: Empty `thebibliography' environment on input line 24.
+
 ) [9
-
-] (./main.bbl
-Overfull \hbox (48.3135pt too wide) in paragraph at lines 25--28
-[]\T1/ptm/m/it/10.95 JavaFX für das Raspber-ry Pi\T1/ptm/m/n/10.95 , Oracle, ht
-t-ps://blogs.oracle.com/java/entry/developer_preview_of_java_se,
- []
-
-) [10
-
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7347 strings out of 493315
- 98453 string characters out of 6137904
- 175221 words of memory out of 5000000
- 10580 multiletter control sequences out of 15000+600000
- 41672 words of font info for 73 fonts, out of 8000000 for 9000
+ 7333 strings out of 493315
+ 98296 string characters out of 6137904
+ 174922 words of memory out of 5000000
+ 10568 multiletter control sequences out of 15000+600000
+ 40468 words of font info for 72 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,45p,332b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc
@@ -1025,12 +997,11 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 312266 bytes).
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (13 pages, 305789 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 130 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

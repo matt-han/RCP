@@ -1,11 +1,10 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}aaaaaa1}{2}
-\contentsline {section}{\numberline {1.1}section 1}{2}
-\contentsline {section}{\numberline {1.2}section 2}{3}
-\contentsline {chapter}{\numberline {2}Chapter 2}{4}
-\contentsline {chapter}{\numberline {3}chapter 3}{5}
-\contentsline {section}{\numberline {3.1}section}{5}
-\contentsline {chapter}{\numberline {4}chapter 4}{6}
-\contentsline {chapter}{\numberline {5}chapter 5}{7}
-\contentsline {chapter}{\numberline {A}Anhang}{9}
-\contentsline {chapter}{Literatur- und Quellenverzeichnis}{10}
+\contentsline {section}{\numberline {1}section11}{2}
+\contentsline {subsection}{\numberline {1.1}1.1}{2}
+\contentsline {subsection}{\numberline {1.2}1.2}{2}
+\contentsline {section}{\numberline {2}section22}{3}
+\contentsline {section}{\numberline {3}section33}{4}
+\contentsline {section}{\numberline {4}section44}{5}
+\contentsline {section}{\numberline {5}section55}{6}
+\contentsline {section}{\numberline {A}Anhang}{8}
+\contentsline {section}{Literatur- und Quellenverzeichnis}{9}
