@@ -1,0 +1,10 @@
+
+29.Mai 2007    29.Mai 2007   29.Mai 2007
+
+Diese ist die letzte Version des Identifikationssystems,
+das in Matlab 5.3 geschrieben wurde.
+Es berücksichtigt das Problem kleiner Ausgangs- und großer
+Eingangssignale.
+Es ist geeigent zur anwendung unter Matlab 5 und 6.
+
+29.Mai 2007     29.Mai 2007     29.Mai 2007
