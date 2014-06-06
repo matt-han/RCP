@@ -1,12 +1,12 @@
 Model {
-  Name			  "simulation_strecke"
+  Name			  "simulation_regelkreis"
   Version		  7.0
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.8"
+    ComputedModelVersion    "1.26"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -38,15 +38,15 @@ Model {
   StatusBar		  on
   BrowserShowLibraryLinks off
   BrowserLookUnderMasks	  off
-  Created		  "Sun Jun 01 21:05:49 2014"
+  Created		  "Sun Jun 01 22:19:04 2014"
   Creator		  "Matze"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Matze"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Jun 01 21:54:15 2014"
+  LastModifiedDate	  "Fri Jun 06 20:15:41 2014"
   RTWModifiedTimeStamp	  0
-  ModelVersionFormat	  "1.%<AutoIncrement:8>"
+  ModelVersionFormat	  "1.%<AutoIncrement:26>"
   ConfigurationManager	  "None"
   SimulationMode	  "normal"
   LinearizationMsg	  "none"
@@ -104,7 +104,7 @@ Model {
 	  $ObjectID		  2
 	  Version		  "1.3.0"
 	  StartTime		  "0.0"
-	  StopTime		  "10.0"
+	  StopTime		  "25.0"
 	  AbsTol		  "auto"
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
@@ -557,6 +557,12 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
       BlockType		      Step
       Time		      "1"
       Before		      "0"
@@ -642,11 +648,11 @@ Model {
     FontAngle		    "normal"
   }
   System {
-    Name		    "simulation_strecke"
-    Location		    [398, 119, 1063, 967]
+    Name		    "simulation_regelkreis"
+    Location		    [2, 82, 928, 988]
     Open		    on
     ModelBrowserVisibility  off
-    ModelBrowserWidth	    200
+    ModelBrowserWidth	    212
     ScreenColor		    "white"
     PaperOrientation	    "landscape"
     PaperPositionMode	    "auto"
@@ -659,23 +665,25 @@ Model {
     ReportName		    "simulink-default.rpt"
     Block {
       BlockType		      Step
-      Name		      "1V_Step"
-      Position		      [120, 225, 150, 255]
-      Time		      "3.0"
+      Name		      "-1_Step"
+      Position		      [395, 265, 425, 295]
+      Time		      "9"
+      After		      "-0.35"
       SampleTime	      "0"
     }
     Block {
       BlockType		      Step
-      Name		      "4V_Step"
-      Position		      [40, 185, 70, 215]
-      After		      "4"
+      Name		      "1_Step"
+      Position		      [395, 205, 425, 235]
+      Time		      "4.5"
+      After		      "0.35"
       SampleTime	      "0"
     }
     Block {
       BlockType		      Sum
-      Name		      "Add1"
+      Name		      "Add2"
       Ports		      [2, 1]
-      Position		      [280, 252, 310, 283]
+      Position		      [500, 247, 530, 278]
       CollapseMode	      "All dimensions"
       InputSameDT	      off
       OutDataTypeMode	      "Inherit via internal rule"
@@ -685,9 +693,9 @@ Model {
     }
     Block {
       BlockType		      Sum
-      Name		      "Add2"
+      Name		      "Add3"
       Ports		      [2, 1]
-      Position		      [180, 187, 210, 218]
+      Position		      [715, 472, 745, 503]
       CollapseMode	      "All dimensions"
       InputSameDT	      off
       OutDataTypeMode	      "Inherit via internal rule"
@@ -697,19 +705,138 @@ Model {
     }
     Block {
       BlockType		      Constant
-      Name		      "Offset_OUT"
-      Position		      [195, 260, 225, 290]
-      Value		      "-0.105"
+      Name		      "Constant"
+      Position		      [180, 480, 210, 510]
+      Value		      "4"
       OutDataType	      "sfix(16)"
       OutScaling	      "2^0"
     }
     Block {
+      BlockType		      SubSystem
+      Name		      "PI Regler1"
+      Ports		      [1, 1]
+      Position		      [335, 474, 435, 516]
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"PI Regler1"
+	Location		[204, 87, 703, 943]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [15, 103, 45, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [110, 94, 170, 126]
+	  Gain			  "4.4668"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "first"
+	  Position		  [245, 91, 365, 129]
+	  Numerator		  "[0.83262 4.4668]"
+	  Denominator		  "[1 0]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [440, 103, 470, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "first"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "first"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
       BlockType		      Scope
-      Name		      "Sprung"
+      Name		      "Sprung Stoerung"
       Ports		      [1]
-      Position		      [355, 189, 385, 221]
+      Position		      [570, 184, 600, 216]
       Floating		      off
-      Location		      [153, 120, 864, 507]
+      Location		      [123, 482, 834, 869]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "10"
+      YMin		      "0"
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Sprungantwort Strecke"
+      Ports		      [1]
+      Position		      [820, 404, 850, 436]
+      Floating		      off
+      Location		      [535, 430, 1246, 811]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "10"
+      YMin		      "0"
+      SaveName		      "ScopeData4"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Sprungantwort Störung"
+      Ports		      [1]
+      Position		      [750, 189, 780, 221]
+      Floating		      off
+      Location		      [1007, 256, 1718, 637]
       Open		      off
       NumInputPorts	      "1"
       ZoomMode		      "xonly"
@@ -724,26 +851,138 @@ Model {
     }
     Block {
       BlockType		      Scope
-      Name		      "Sprungant Simu Strecke"
+      Name		      "Stellgroesse"
       Ports		      [1]
-      Position		      [505, 254, 535, 286]
+      Position		      [500, 404, 530, 436]
       Floating		      off
-      Location		      [151, 576, 863, 944]
+      Location		      [720, 108, 1609, 675]
       Open		      off
       NumInputPorts	      "1"
+      ZoomMode		      "xonly"
       List {
 	ListType		AxesTitles
 	axes1			"%<SignalLabel>"
       }
-      SaveName		      "ScopeData1"
+      TimeRange		      "10"
+      YMin		      "0"
+      SaveName		      "ScopeData5"
       DataFormat	      "StructureWithTime"
       SampleTime	      "0"
     }
     Block {
       BlockType		      SubSystem
+      Name		      "Stoerung"
+      Ports		      [1, 1]
+      Position		      [575, 244, 675, 286]
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"Stoerung"
+	Location		[469, 521, 967, 821]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [15, 103, 45, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "V1"
+	  Position		  [75, 94, 135, 126]
+	  Gain			  "2.6424"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "V2"
+	  Position		  [260, 94, 320, 126]
+	  Gain			  "2.6433"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "first"
+	  Position		  [155, 92, 240, 128]
+	  Denominator		  "[0.16207 1]"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "second"
+	  Position		  [340, 92, 425, 128]
+	  Denominator		  "[0.16367 1]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [440, 103, 470, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "V1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "V1"
+	  SrcPort		  1
+	  DstBlock		  "first"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "first"
+	  SrcPort		  1
+	  DstBlock		  "V2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "second"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "V2"
+	  SrcPort		  1
+	  DstBlock		  "second"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
       Name		      "Subsystem Strecke"
       Ports		      [1, 1]
-      Position		      [350, 249, 450, 291]
+      Position		      [550, 474, 650, 516]
       MinAlgLoopOccurrences   off
       RTWSystemCode	      "Auto"
       FunctionWithSeparateData off
@@ -765,33 +1004,46 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "In1"
-	  Position		  [45, 103, 75, 117]
+	  Position		  [25, 103, 55, 117]
 	  IconDisplay		  "Port number"
 	  OutDataType		  "sfix(16)"
 	  OutScaling		  "2^0"
 	}
 	Block {
+	  BlockType		  Gain
+	  Name			  "Messeinrichtung"
+	  Position		  [115, 91, 170, 129]
+	  Gain			  "0.08"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
 	  BlockType		  TransferFcn
 	  Name			  "Transfer Fcn"
-	  Position		  [165, 92, 260, 128]
+	  Position		  [305, 92, 400, 128]
 	  Denominator		  "[0.003365 1]"
 	}
 	Block {
 	  BlockType		  TransferFcn
 	  Name			  "Transfer Fcn1"
-	  Position		  [295, 92, 390, 128]
+	  Position		  [435, 92, 530, 128]
 	  Denominator		  "[0.1864 1]"
 	}
 	Block {
 	  BlockType		  TransferFcn
 	  Name			  "Transfer Fcn2"
-	  Position		  [425, 89, 645, 131]
+	  Position		  [565, 89, 785, 131]
 	  Denominator		  "[0.0082868 2*0.98029*0.091032 1]"
 	}
 	Block {
 	  BlockType		  Gain
 	  Name			  "V"
-	  Position		  [95, 91, 150, 129]
+	  Position		  [235, 91, 290, 129]
 	  Gain			  "1.0333"
 	  ParameterDataTypeMode	  "Inherit via internal rule"
 	  ParameterDataType	  "sfix(16)"
@@ -804,7 +1056,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Out1"
-	  Position		  [695, 103, 725, 117]
+	  Position		  [835, 103, 865, 117]
 	  IconDisplay		  "Port number"
 	  OutDataType		  "sfix(16)"
 	  OutScaling		  "2^0"
@@ -812,7 +1064,7 @@ Model {
 	Line {
 	  SrcBlock		  "In1"
 	  SrcPort		  1
-	  DstBlock		  "V"
+	  DstBlock		  "Messeinrichtung"
 	  DstPort		  1
 	}
 	Line {
@@ -839,53 +1091,158 @@ Model {
 	  DstBlock		  "Out1"
 	  DstPort		  1
 	}
+	Line {
+	  SrcBlock		  "Messeinrichtung"
+	  SrcPort		  1
+	  DstBlock		  "V"
+	  DstPort		  1
+	}
       }
     }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [255, 485, 275, 505]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      CollapseMode	      "All dimensions"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [40, 95, 70, 125]
+      IOType		      "siggen"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Random\nSource"
+      Ports		      [0, 1]
+      Position		      [205, 126, 240, 164]
+      IOType		      "siggen"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "dspsrcs4/Random\nSource"
+      SourceType	      "Random Source"
+      SrcType		      "Uniform"
+      NormMethod	      "Ziggurat"
+      CltLength		      "12"
+      MinVal		      "0"
+      MaxVal		      "1"
+      MeanVal		      "0"
+      VarVal		      "1"
+      RepMode		      "Not repeatable"
+      rawSeed		      "1"
+      IsInherit		      off
+      SampMode		      "Discrete"
+      SampTime		      "1"
+      SampFrame		      "1"
+      DataType		      "Double"
+      OutComplex	      "Real"
+    }
     Line {
-      SrcBlock		      "Subsystem Strecke"
+      SrcBlock		      "Constant"
       SrcPort		      1
-      DstBlock		      "Sprungant Simu Strecke"
+      DstBlock		      "Sum"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "4V_Step"
+      SrcBlock		      "1_Step"
       SrcPort		      1
-      Points		      [90, 0]
+      Points		      [25, 0; 0, 35]
       DstBlock		      "Add2"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "Offset_OUT"
+      SrcBlock		      "-1_Step"
       SrcPort		      1
-      DstBlock		      "Add1"
+      Points		      [0, -10]
+      DstBlock		      "Add2"
       DstPort		      2
     }
     Line {
       SrcBlock		      "Add2"
       SrcPort		      1
-      Points		      [45, 0]
+      Points		      [5, 0]
       Branch {
-	Points			[0, 55]
-	DstBlock		"Add1"
+	DstBlock		"Stoerung"
 	DstPort			1
       }
       Branch {
-	DstBlock		"Sprung"
+	Points			[0, -65]
+	DstBlock		"Sprung Stoerung"
 	DstPort			1
       }
     }
     Line {
-      SrcBlock		      "1V_Step"
+      SrcBlock		      "Stoerung"
       SrcPort		      1
-      Points		      [5, 0; 0, -30]
-      DstBlock		      "Add2"
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"Add3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Sprungantwort Störung"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem Strecke"
+      SrcPort		      1
+      DstBlock		      "Add3"
       DstPort		      2
     }
     Line {
-      SrcBlock		      "Add1"
+      SrcBlock		      "Add3"
       SrcPort		      1
-      DstBlock		      "Subsystem Strecke"
+      Points		      [20, 0]
+      Branch {
+	Points			[0, -70]
+	DstBlock		"Sprungantwort Strecke"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 65; -505, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "PI Regler1"
       DstPort		      1
     }
+    Line {
+      SrcBlock		      "PI Regler1"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[5, 0; 0, -75]
+	DstBlock		"Stellgroesse"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Subsystem Strecke"
+	DstPort			1
+      }
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    V     8    (     @         %    \"     $    !     0         %  0 \"0    $    2    4V5E9       4V5E9$9L86<         #@   #@    &    \"     0         !0    @    !    !0    $         $     4    R,S$Q,P    X   !     !@    @    $          4    (     0    T    !         !     -    1&].;W13879E4V5E9     "
   }
 }
