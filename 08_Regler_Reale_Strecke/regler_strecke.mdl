@@ -1,16 +1,16 @@
 Model {
-  Name			  "simulation_regelkreis"
+  Name			  "regler_strecke"
   Version		  7.0
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.37"
+    ComputedModelVersion    "1.18"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
-  SavedCharacterEncoding  "windows-1252"
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
   SaveDefaultBlockParams  on
   SampleTimeColors	  off
   LibraryLinkDisplay	  "none"
@@ -38,17 +38,17 @@ Model {
   StatusBar		  on
   BrowserShowLibraryLinks off
   BrowserLookUnderMasks	  off
-  Created		  "Sun Jun 01 22:19:04 2014"
-  Creator		  "Matze"
+  Created		  "Fri Jun 08 10:24:03 2007"
+  Creator		  "Admin"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Student"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jun 16 14:23:28 2014"
+  LastModifiedDate	  "Mon Jun 16 16:02:28 2014"
   RTWModifiedTimeStamp	  0
-  ModelVersionFormat	  "1.%<AutoIncrement:37>"
+  ModelVersionFormat	  "1.%<AutoIncrement:18>"
   ConfigurationManager	  "None"
-  SimulationMode	  "normal"
+  SimulationMode	  "external"
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -73,7 +73,7 @@ Model {
   ExtModeTrigMode	  "normal"
   ExtModeTrigPort	  "1"
   ExtModeTrigElement	  "any"
-  ExtModeTrigDuration	  1000
+  ExtModeTrigDuration	  1000000
   ExtModeTrigDurationFloating "auto"
   ExtModeTrigHoldOff	  0
   ExtModeTrigDelay	  0
@@ -104,9 +104,9 @@ Model {
 	  $ObjectID		  2
 	  Version		  "1.3.0"
 	  StartTime		  "0.0"
-	  StopTime		  "25.0"
+	  StopTime		  "10"
 	  AbsTol		  "auto"
-	  FixedStep		  "auto"
+	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
 	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
@@ -118,9 +118,9 @@ Model {
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
-	  SolverMode		  "Auto"
-	  Solver		  "ode45"
-	  SolverName		  "ode45"
+	  SolverMode		  "SingleTasking"
+	  Solver		  "ode4"
+	  SolverName		  "ode4"
 	  ZeroCrossControl	  "UseLocalSettings"
 	  AlgebraicLoopSolver	  "TrustRegion"
 	  SolverResetMethod	  "Fast"
@@ -172,7 +172,7 @@ Model {
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
 	  InlineParams		  off
-	  InlineInvariantSignals  off
+	  InlineInvariantSignals  on
 	  OptimizeBlockIOStorage  on
 	  BufferReuse		  on
 	  EnforceIntegerDowncast  on
@@ -210,11 +210,11 @@ Model {
 	  AlgebraicLoopMsg	  "warning"
 	  ArtificialAlgebraicLoopMsg "warning"
 	  SaveWithDisabledLinksMsg "warning"
-	  SaveWithParameterizedLinksMsg	"warning"
+	  SaveWithParameterizedLinksMsg	"none"
 	  CheckSSInitialOutputMsg on
 	  CheckExecutionContextPreStartOutputMsg off
 	  CheckExecutionContextRuntimeOutputMsg	off
-	  SignalResolutionControl "UseLocalSettings"
+	  SignalResolutionControl "TryResolveAllWithWarning"
 	  BlockPriorityViolationMsg "warning"
 	  MinStepSizeMsg	  "warning"
 	  TimeAdjustmentMsg	  "none"
@@ -222,8 +222,8 @@ Model {
 	  SolverPrmCheckMsg	  "warning"
 	  InheritedTsInSrcMsg	  "warning"
 	  DiscreteInheritContinuousMsg "warning"
-	  MultiTaskDSMMsg	  "error"
-	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
@@ -261,7 +261,7 @@ Model {
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "warning"
-	  StrictBusMsg		  "Warning"
+	  StrictBusMsg		  "None"
 	  LoggingUnavailableSignals "error"
 	}
 	Simulink.HardwareCC {
@@ -311,11 +311,12 @@ Model {
 	    PropName		    "DisabledProps"
 	  }
 	  Version		  "1.3.0"
-	  SystemTargetFile	  "grt.tlc"
+	  SystemTargetFile	  "rtwin.tlc"
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
 	  GenerateMakefile	  on
-	  TemplateMakefile	  "grt_default_tmf"
+	  TemplateMakefile	  "rtwin.tmf"
+	  Description		  "Real-Time Windows Target"
 	  GenerateReport	  off
 	  SaveLog		  off
 	  RTWVerbose		  on
@@ -326,12 +327,13 @@ Model {
 	  TLCAssert		  off
 	  ProcessScriptMode	  "Default"
 	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rtwin_make_rtw_hook"
 	  ConfigAtBuild		  off
 	  IncludeHyperlinkInReport off
 	  LaunchReport		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
-	  IncludeERTFirstTime	  off
+	  IncludeERTFirstTime	  on
 	  GenerateTraceInfo	  off
 	  RTWCompilerOptimization "Off"
 	  Array {
@@ -390,7 +392,7 @@ Model {
 	      InlinedPrmAccess	      "Literals"
 	      ReqsInCode	      off
 	    }
-	    Simulink.GRTTargetCC {
+	    RTW.RTWinTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      10
 	      Array {
@@ -401,8 +403,6 @@ Model {
 		Cell			"SuppressErrorStatus"
 		Cell			"ERTCustomFileBanners"
 		Cell			"GenerateSampleERTMain"
-		Cell			"GenerateTestInterfaces"
-		Cell			"ModelStepFunctionPrototypeControlCompliant"
 		Cell			"MultiInstanceERTCode"
 		Cell			"PurelyIntegerCode"
 		Cell			"SupportNonFinite"
@@ -410,11 +410,13 @@ Model {
 		Cell			"SupportAbsoluteTime"
 		Cell			"SupportContinuousTime"
 		Cell			"SupportNonInlinedSFcns"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
 		Cell			"PortableWordSizes"
 		PropName		"DisabledProps"
 	      }
 	      Version		      "1.3.0"
-	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
 	      GenFloatMathFcnCalls    "ANSI_C"
@@ -423,8 +425,8 @@ Model {
 	      GenerateSampleERTMain   off
 	      GenerateTestInterfaces  off
 	      IsPILTarget	      off
-	      ModelReferenceCompliant on
-	      CompOptLevelCompliant   on
+	      ModelReferenceCompliant off
+	      CompOptLevelCompliant   off
 	      IncludeMdlTerminateFcn  on
 	      CombineOutputUpdateFcns off
 	      SuppressErrorStatus     off
@@ -432,7 +434,7 @@ Model {
 	      ERTCustomFileBanners    off
 	      SupportAbsoluteTime     on
 	      LogVarNameModifier      "rt_"
-	      MatFileLogging	      on
+	      MatFileLogging	      off
 	      MultiInstanceERTCode    off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
@@ -443,17 +445,16 @@ Model {
 	      ParenthesesLevel	      "Nominal"
 	      PortableWordSizes	      off
 	      ModelStepFunctionPrototypeControlCompliant off
-	      ExtMode		      off
-	      ExtModeStaticAlloc      off
-	      ExtModeTesting	      off
-	      ExtModeStaticAllocSize  1000000
+	      CCOptimize	      on
+	      CCListing		      off
+	      RebuildAll	      off
+	      ExtMode		      on
 	      ExtModeTransport	      0
-	      ExtModeMexFile	      "ext_comm"
+	      ExtModeStaticAlloc      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTesting	      off
+	      ExtModeMexFile	      "rtwinext"
 	      ExtModeIntrfLevel	      "Level1"
-	      RTWCAPISignals	      off
-	      RTWCAPIParams	      off
-	      RTWCAPIStates	      off
-	      GenerateASAP2	      off
 	    }
 	    PropName		    "Components"
 	  }
@@ -461,6 +462,7 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 "
       CurrentDlgPage	      "Solver"
     }
     PropName		    "ConfigurationSets"
@@ -475,7 +477,7 @@ Model {
     BackgroundColor	    "white"
     DropShadow		    off
     NamePlacement	    "normal"
-    FontName		    "Arial"
+    FontName		    "Helvetica"
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
@@ -563,15 +565,6 @@ Model {
       PortCounts	      "[]"
     }
     Block {
-      BlockType		      Step
-      Time		      "1"
-      Before		      "0"
-      After		      "1"
-      SampleTime	      "-1"
-      VectorParams1D	      on
-      ZeroCross		      on
-    }
-    Block {
       BlockType		      SubSystem
       ShowPortLabels	      "FromPortIcon"
       Permissions	      "ReadWrite"
@@ -635,24 +628,24 @@ Model {
     ForegroundColor	    "black"
     BackgroundColor	    "white"
     DropShadow		    off
-    FontName		    "Arial"
+    FontName		    "Helvetica"
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
     UseDisplayTextAsClickCallback off
   }
   LineDefaults {
-    FontName		    "Arial"
+    FontName		    "Helvetica"
     FontSize		    9
     FontWeight		    "normal"
     FontAngle		    "normal"
   }
   System {
-    Name		    "simulation_regelkreis"
-    Location		    [2, 82, 928, 988]
+    Name		    "regler_strecke"
+    Location		    [2, 70, 1278, 976]
     Open		    on
     ModelBrowserVisibility  off
-    ModelBrowserWidth	    212
+    ModelBrowserWidth	    200
     ScreenColor		    "white"
     PaperOrientation	    "landscape"
     PaperPositionMode	    "auto"
@@ -664,25 +657,10 @@ Model {
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     Block {
-      BlockType		      Step
-      Name		      "-1_Step"
-      Position		      [395, 265, 425, 295]
-      Time		      "9"
-      After		      "-1"
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Step
-      Name		      "1_Step"
-      Position		      [395, 205, 425, 235]
-      Time		      "4.5"
-      SampleTime	      "0"
-    }
-    Block {
       BlockType		      Sum
-      Name		      "Add2"
+      Name		      "Add"
       Ports		      [2, 1]
-      Position		      [500, 247, 530, 278]
+      Position		      [295, 277, 325, 308]
       CollapseMode	      "All dimensions"
       InputSameDT	      off
       OutDataTypeMode	      "Inherit via internal rule"
@@ -692,9 +670,9 @@ Model {
     }
     Block {
       BlockType		      Sum
-      Name		      "Add3"
+      Name		      "Add1"
       Ports		      [2, 1]
-      Position		      [715, 472, 745, 503]
+      Position		      [570, 107, 600, 138]
       CollapseMode	      "All dimensions"
       InputSameDT	      off
       OutDataTypeMode	      "Inherit via internal rule"
@@ -703,19 +681,45 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
-      BlockType		      Constant
-      Name		      "Constant"
-      Position		      [180, 480, 210, 510]
-      Value		      "4"
-      OutDataType	      "sfix(16)"
-      OutScaling	      "2^0"
+      BlockType		      Reference
+      Name		      "Analog Input"
+      Ports		      [0, 1]
+      Position		      [150, 265, 205, 305]
+      AttributesFormatString  "National Instruments\\nPCI-6025E [auto]"
+      SourceBlock	      "rtwinlib/Analog Input"
+      SourceType	      "RTWin Analog Input"
+      SampleTime	      "0.001"
+      DrvName		      "National_Instruments/PCI-6025E"
+      DrvAddress	      "4294967295"
+      DrvOptions	      "[0 1 0 0 0 0]"
+      Channels		      "1"
+      RangeMode		      "1"
+      VoltRange		      "1"
+      DataType		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Analog Output"
+      Ports		      [1]
+      Position		      [645, 105, 700, 145]
+      AttributesFormatString  "National Instruments\\nPCI-6025E [auto]"
+      SourceBlock	      "rtwinlib/Analog Output"
+      SourceType	      "RTWin Analog Output"
+      SampleTime	      "0.001"
+      DrvName		      "National_Instruments/PCI-6025E"
+      DrvAddress	      "4294967295"
+      DrvOptions	      "[0 1 0 0 0 0]"
+      Channels		      "1"
+      RangeMode		      "1"
+      VoltRange		      "1"
+      InitialValue	      "0"
+      FinalValue	      "0"
     }
     Block {
       BlockType		      Gain
-      Name		      "Messeinrichtung"
-      Position		      [485, 536, 540, 574]
-      Orientation	      "left"
-      Gain		      "0.08"
+      Name		      "Gain"
+      Position		      [410, 275, 485, 315]
+      Gain		      "1/0.08"
       ParameterDataTypeMode   "Inherit via internal rule"
       ParameterDataType	      "sfix(16)"
       ParameterScaling	      "2^0"
@@ -725,10 +729,29 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
+      BlockType		      Constant
+      Name		      "Offset_in"
+      Position		      [155, 370, 225, 400]
+      Value		      "-0.1292"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Offset_out"
+      Position		      [570, 185, 600, 215]
+      Orientation	      "left"
+      Value		      "-0.105"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "PI Regler1"
       Ports		      [1, 1]
-      Position		      [305, 474, 405, 516]
+      Position		      [405, 94, 500, 136]
       MinAlgLoopOccurrences   off
       RTWSystemCode	      "Auto"
       FunctionWithSeparateData off
@@ -804,303 +827,42 @@ Model {
       }
     }
     Block {
-      BlockType		      Scope
-      Name		      "Regeldifferenz"
-      Ports		      [1]
-      Position		      [345, 379, 375, 411]
-      Floating		      off
-      Location		      [30, 158, 919, 725]
-      Open		      off
-      NumInputPorts	      "1"
-      ZoomMode		      "xonly"
-      List {
-	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
-      }
-      TimeRange		      "10"
-      YMin		      "0"
-      SaveName		      "ScopeData1"
-      DataFormat	      "StructureWithTime"
-      SampleTime	      "0"
+      BlockType		      Constant
+      Name		      "Sprung"
+      Position		      [160, 100, 190, 130]
+      Value		      "4"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SampleTime	      "-1"
     }
     Block {
       BlockType		      Scope
-      Name		      "Sprung Stoerung"
-      Ports		      [1]
-      Position		      [570, 184, 600, 216]
+      Name		      "Stellgröße_Ausgang"
+      Ports		      [2]
+      Position		      [550, 271, 580, 304]
       Floating		      off
-      Location		      [123, 482, 834, 869]
+      Location		      [261, 196, 934, 600]
       Open		      off
-      NumInputPorts	      "1"
-      ZoomMode		      "xonly"
-      List {
-	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
-      }
-      TimeRange		      "10"
-      YMin		      "0"
-      SaveName		      "ScopeData2"
-      DataFormat	      "StructureWithTime"
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "Stoerung"
-      Ports		      [1, 1]
-      Position		      [575, 244, 675, 286]
-      MinAlgLoopOccurrences   off
-      RTWSystemCode	      "Auto"
-      FunctionWithSeparateData off
-      System {
-	Name			"Stoerung"
-	Location		[469, 521, 967, 821]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	Block {
-	  BlockType		  Inport
-	  Name			  "In1"
-	  Position		  [15, 103, 45, 117]
-	  IconDisplay		  "Port number"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "V1"
-	  Position		  [75, 94, 135, 126]
-	  Gain			  "2.6424"
-	  ParameterDataTypeMode	  "Inherit via internal rule"
-	  ParameterDataType	  "sfix(16)"
-	  ParameterScaling	  "2^0"
-	  OutDataTypeMode	  "Inherit via internal rule"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "V2"
-	  Position		  [260, 94, 320, 126]
-	  Gain			  "2.6433"
-	  ParameterDataTypeMode	  "Inherit via internal rule"
-	  ParameterDataType	  "sfix(16)"
-	  ParameterScaling	  "2^0"
-	  OutDataTypeMode	  "Inherit via internal rule"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  TransferFcn
-	  Name			  "first"
-	  Position		  [155, 92, 240, 128]
-	  Denominator		  "[0.16207 1]"
-	}
-	Block {
-	  BlockType		  TransferFcn
-	  Name			  "second"
-	  Position		  [340, 92, 425, 128]
-	  Denominator		  "[0.16367 1]"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Out1"
-	  Position		  [440, 103, 470, 117]
-	  IconDisplay		  "Port number"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	}
-	Line {
-	  SrcBlock		  "In1"
-	  SrcPort		  1
-	  DstBlock		  "V1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "V1"
-	  SrcPort		  1
-	  DstBlock		  "first"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "first"
-	  SrcPort		  1
-	  DstBlock		  "V2"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "second"
-	  SrcPort		  1
-	  DstBlock		  "Out1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "V2"
-	  SrcPort		  1
-	  DstBlock		  "second"
-	  DstPort		  1
-	}
-      }
-    }
-    Block {
-      BlockType		      Scope
-      Name		      "Störung_Stellgrösse_Sprungantwort"
-      Ports		      [3]
-      Position		      [820, 408, 850, 442]
-      Floating		      off
-      Location		      [1, 45, 1281, 995]
-      Open		      off
-      NumInputPorts	      "3"
-      ZoomMode		      "xonly"
+      NumInputPorts	      "2"
       List {
 	ListType		AxesTitles
 	axes1			"%<SignalLabel>"
 	axes2			"%<SignalLabel>"
-	axes3			"%<SignalLabel>"
       }
-      TimeRange		      "10"
-      YMin		      "0~-5~-5"
-      YMax		      "5~5~5"
-      SaveName		      "ScopeData4"
+      TimeRange		      "1"
+      YMin		      "2.75~27.5"
+      YMax		      "4.75~55"
+      SaveToWorkspace	      on
+      SaveName		      "ScopeData1"
       DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
       SampleTime	      "0"
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "Subsystem Strecke"
-      Ports		      [1, 1]
-      Position		      [550, 474, 650, 516]
-      MinAlgLoopOccurrences   off
-      RTWSystemCode	      "Auto"
-      FunctionWithSeparateData off
-      System {
-	Name			"Subsystem Strecke"
-	Location		[89, 139, 1095, 686]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	Block {
-	  BlockType		  Inport
-	  Name			  "In1"
-	  Position		  [25, 103, 55, 117]
-	  IconDisplay		  "Port number"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	}
-	Block {
-	  BlockType		  TransferFcn
-	  Name			  "Transfer Fcn"
-	  Position		  [305, 92, 400, 128]
-	  Denominator		  "[0.003365 1]"
-	}
-	Block {
-	  BlockType		  TransferFcn
-	  Name			  "Transfer Fcn1"
-	  Position		  [435, 92, 530, 128]
-	  Denominator		  "[0.1864 1]"
-	}
-	Block {
-	  BlockType		  TransferFcn
-	  Name			  "Transfer Fcn2"
-	  Position		  [565, 89, 785, 131]
-	  Denominator		  "[0.0082868 2*0.98029*0.091032 1]"
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "V"
-	  Position		  [210, 91, 265, 129]
-	  Gain			  "1.0333"
-	  ParameterDataTypeMode	  "Inherit via internal rule"
-	  ParameterDataType	  "sfix(16)"
-	  ParameterScaling	  "2^0"
-	  OutDataTypeMode	  "Inherit via internal rule"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "V1"
-	  Position		  [115, 91, 170, 129]
-	  Gain			  "1/0.08"
-	  ParameterDataTypeMode	  "Inherit via internal rule"
-	  ParameterDataType	  "sfix(16)"
-	  ParameterScaling	  "2^0"
-	  OutDataTypeMode	  "Inherit via internal rule"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Out1"
-	  Position		  [835, 103, 865, 117]
-	  IconDisplay		  "Port number"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	}
-	Line {
-	  SrcBlock		  "V"
-	  SrcPort		  1
-	  DstBlock		  "Transfer Fcn"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Transfer Fcn"
-	  SrcPort		  1
-	  DstBlock		  "Transfer Fcn1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Transfer Fcn1"
-	  SrcPort		  1
-	  DstBlock		  "Transfer Fcn2"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Transfer Fcn2"
-	  SrcPort		  1
-	  DstBlock		  "Out1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "In1"
-	  SrcPort		  1
-	  DstBlock		  "V1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "V1"
-	  SrcPort		  1
-	  DstBlock		  "V"
-	  DstPort		  1
-	}
-      }
     }
     Block {
       BlockType		      Sum
       Name		      "Sum"
       Ports		      [2, 1]
-      Position		      [255, 485, 275, 505]
+      Position		      [335, 105, 355, 125]
       ShowName		      off
       IconShape		      "round"
       Inputs		      "|+-"
@@ -1111,151 +873,76 @@ Model {
       OutScaling	      "2^0"
       SaturateOnIntegerOverflow	off
     }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant1"
-      Position		      [40, 95, 70, 125]
-      IOType		      "siggen"
-      OutDataType	      "sfix(16)"
-      OutScaling	      "2^0"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Random\nSource"
-      Ports		      [0, 1]
-      Position		      [205, 126, 240, 164]
-      IOType		      "siggen"
-      UserDataPersistent      on
-      UserData		      "DataTag0"
-      SourceBlock	      "dspsrcs4/Random\nSource"
-      SourceType	      "Random Source"
-      SrcType		      "Uniform"
-      NormMethod	      "Ziggurat"
-      CltLength		      "12"
-      MinVal		      "0"
-      MaxVal		      "1"
-      MeanVal		      "0"
-      VarVal		      "1"
-      RepMode		      "Not repeatable"
-      rawSeed		      "1"
-      IsInherit		      off
-      SampMode		      "Discrete"
-      SampTime		      "1"
-      SampFrame		      "1"
-      DataType		      "Double"
-      OutComplex	      "Real"
+    Line {
+      SrcBlock		      "Analog Input"
+      SrcPort		      1
+      DstBlock		      "Add"
+      DstPort		      1
     }
     Line {
-      SrcBlock		      "Constant"
+      SrcBlock		      "Offset_in"
+      SrcPort		      1
+      Points		      [0, -85]
+      DstBlock		      "Add"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Add"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"Sum"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Gain"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sprung"
       SrcPort		      1
       DstBlock		      "Sum"
       DstPort		      1
-    }
-    Line {
-      SrcBlock		      "1_Step"
-      SrcPort		      1
-      Points		      [25, 0; 0, 35]
-      DstBlock		      "Add2"
-      DstPort		      1
-    }
-    Line {
-      SrcBlock		      "-1_Step"
-      SrcPort		      1
-      Points		      [0, -10]
-      DstBlock		      "Add2"
-      DstPort		      2
-    }
-    Line {
-      SrcBlock		      "Add2"
-      SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	DstBlock		"Stoerung"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, -65]
-	DstBlock		"Sprung Stoerung"
-	DstPort			1
-      }
-    }
-    Line {
-      SrcBlock		      "Stoerung"
-      SrcPort		      1
-      Points		      [10, 0]
-      Branch {
-	Points			[0, 215]
-	DstBlock		"Add3"
-	DstPort			1
-      }
-      Branch {
-	Points			[100, 0; 0, 150]
-	DstBlock		"Störung_Stellgrösse_Sprungantwort"
-	DstPort			1
-      }
-    }
-    Line {
-      SrcBlock		      "Subsystem Strecke"
-      SrcPort		      1
-      DstBlock		      "Add3"
-      DstPort		      2
-    }
-    Line {
-      SrcBlock		      "Add3"
-      SrcPort		      1
-      Points		      [20, 0]
-      Branch {
-	Points			[0, 65]
-	DstBlock		"Messeinrichtung"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, -55]
-	DstBlock		"Störung_Stellgrösse_Sprungantwort"
-	DstPort			3
-      }
     }
     Line {
       SrcBlock		      "Sum"
       SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	DstBlock		"PI Regler1"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, -100]
-	DstBlock		"Regeldifferenz"
-	DstPort			1
-      }
+      DstBlock		      "PI Regler1"
+      DstPort		      1
     }
     Line {
       SrcBlock		      "PI Regler1"
       SrcPort		      1
-      Points		      [75, 0]
+      Points		      [10, 0]
       Branch {
-	DstBlock		"Subsystem Strecke"
+	DstBlock		"Add1"
 	DstPort			1
       }
       Branch {
-	Points			[0, -70]
-	DstBlock		"Störung_Stellgrösse_Sprungantwort"
-	DstPort			2
+	Points			[0, 165]
+	DstBlock		"Stellgröße_Ausgang"
+	DstPort			1
       }
     }
     Line {
-      SrcBlock		      "Messeinrichtung"
+      SrcBlock		      "Offset_out"
       SrcPort		      1
-      Points		      [-215, 0]
-      DstBlock		      "Sum"
+      Points		      [-30, 0; 0, -70]
+      DstBlock		      "Add1"
       DstPort		      2
     }
-  }
-}
-MatData {
-  NumRecords		  1
-  DataRecord {
-    Tag			    DataTag0
-    Data		    "  %)30     .    V     8    (     @         %    \"     $    !     0         %  0 \"0    $    2    4V5E9       4V5E9$9L86<         #@   #@    &    \"     0         !0    @    !    !0    $         $     4    R,S$Q,P    X   !     !@    @    $          4    (     0    T    !         !     -    1&].;W13879E4V5E9     "
+    Line {
+      SrcBlock		      "Add1"
+      SrcPort		      1
+      DstBlock		      "Analog Output"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Stellgröße_Ausgang"
+      DstPort		      2
+    }
   }
 }

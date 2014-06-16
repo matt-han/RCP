@@ -1,0 +1,6 @@
+MODEL=regler_strecke_zwei
+NUMST=2
+NCSTATES=1
+HAVESTDIO
+INTEGER_CODE=0
+MT=0

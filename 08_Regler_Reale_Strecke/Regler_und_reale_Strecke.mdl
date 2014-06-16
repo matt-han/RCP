@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.26"
+    ComputedModelVersion    "1.34"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -44,9 +44,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Student"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jun 02 15:53:02 2014"
+  LastModifiedDate	  "Mon Jun 16 14:31:51 2014"
   RTWModifiedTimeStamp	  0
-  ModelVersionFormat	  "1.%<AutoIncrement:26>"
+  ModelVersionFormat	  "1.%<AutoIncrement:34>"
   ConfigurationManager	  "None"
   SimulationMode	  "external"
   LinearizationMsg	  "none"
@@ -485,43 +485,6 @@ Model {
   }
   BlockParameterDefaults {
     Block {
-      BlockType		      Inport
-      Port		      "1"
-      UseBusObject	      off
-      BusObject		      "BusObject"
-      BusOutputAsStruct	      off
-      PortDimensions	      "-1"
-      SampleTime	      "-1"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      DataType		      "auto"
-      OutDataType	      "fixdt(1,16,0)"
-      OutScaling	      "[]"
-      SignalType	      "auto"
-      SamplingMode	      "auto"
-      LatchByDelayingOutsideSignal off
-      LatchByCopyingInsideSignal off
-      Interpolate	      on
-    }
-    Block {
-      BlockType		      Outport
-      Port		      "1"
-      UseBusObject	      off
-      BusObject		      "BusObject"
-      BusOutputAsStruct	      off
-      PortDimensions	      "-1"
-      SampleTime	      "-1"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      DataType		      "auto"
-      OutDataType	      "fixdt(1,16,0)"
-      OutScaling	      "[]"
-      SignalType	      "auto"
-      SamplingMode	      "auto"
-      OutputWhenDisabled      "held"
-      InitialOutput	      "[]"
-    }
-    Block {
       BlockType		      Scope
       ModelBased	      off
       TickLabels	      "OneTimeTick"
@@ -545,24 +508,6 @@ Model {
       PortCounts	      "[]"
     }
     Block {
-      BlockType		      SubSystem
-      ShowPortLabels	      "FromPortIcon"
-      Permissions	      "ReadWrite"
-      PermitHierarchicalResolution "All"
-      TreatAsAtomicUnit	      off
-      SystemSampleTime	      "-1"
-      RTWFcnNameOpts	      "Auto"
-      RTWFileNameOpts	      "Auto"
-      RTWMemSecFuncInitTerm   "Inherit from model"
-      RTWMemSecFuncExecute    "Inherit from model"
-      RTWMemSecDataConstants  "Inherit from model"
-      RTWMemSecDataInternal   "Inherit from model"
-      RTWMemSecDataParameters "Inherit from model"
-      SimViewingDevice	      off
-      DataTypeOverride	      "UseLocalSettings"
-      MinMaxOverflowLogging   "UseLocalSettings"
-    }
-    Block {
       BlockType		      Sum
       IconShape		      "rectangular"
       Inputs		      "++"
@@ -578,14 +523,6 @@ Model {
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	on
       SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      TransferFcn
-      Numerator		      "[1]"
-      Denominator	      "[1 2 1]"
-      AbsoluteTolerance	      "auto"
-      ContinuousStateAttributes	"''"
-      Realization	      "auto"
     }
     Block {
       BlockType		      Constant
@@ -622,7 +559,7 @@ Model {
   }
   System {
     Name		    "Regler_und_reale_Strecke"
-    Location		    [2, 70, 1278, 976]
+    Location		    [2, 74, 1270, 980]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -720,70 +657,10 @@ Model {
       OutScaling	      "2^0"
     }
     Block {
-      BlockType		      SubSystem
-      Name		      "PI Regler"
-      Ports		      [1, 1]
-      Position		      [570, 154, 670, 196]
-      MinAlgLoopOccurrences   off
-      RTWSystemCode	      "Auto"
-      FunctionWithSeparateData off
-      System {
-	Name			"PI Regler"
-	Location		[711, 87, 1272, 943]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	Block {
-	  BlockType		  Inport
-	  Name			  "In1"
-	  Position		  [15, 103, 45, 117]
-	  IconDisplay		  "Port number"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	}
-	Block {
-	  BlockType		  TransferFcn
-	  Name			  "first"
-	  Position		  [230, 91, 350, 129]
-	  Numerator		  "[10.5037 56.1694]"
-	  Denominator		  "[1 0]"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Out1"
-	  Position		  [440, 103, 470, 117]
-	  IconDisplay		  "Port number"
-	  OutDataType		  "sfix(16)"
-	  OutScaling		  "2^0"
-	}
-	Line {
-	  SrcBlock		  "In1"
-	  SrcPort		  1
-	  DstBlock		  "first"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "first"
-	  SrcPort		  1
-	  DstBlock		  "Out1"
-	  DstPort		  1
-	}
-      }
-    }
-    Block {
       BlockType		      Scope
       Name		      "Scope_IN"
       Ports		      [1]
-      Position		      [530, 304, 560, 336]
+      Position		      [715, 344, 745, 376]
       Floating		      off
       Location		      [72, 614, 735, 857]
       Open		      off
@@ -805,7 +682,7 @@ Model {
       BlockType		      Scope
       Name		      "Stellgroesse"
       Ports		      [1]
-      Position		      [715, 89, 745, 121]
+      Position		      [715, 79, 745, 111]
       Floating		      off
       Location		      [71, 296, 744, 535]
       Open		      off
@@ -874,20 +751,6 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "PI Regler"
-      SrcPort		      1
-      Points		      [15, 0]
-      Branch {
-	DstBlock		"Analog Output"
-	DstPort			1
-      }
-      Branch {
-	Points			[0, -70]
-	DstBlock		"Stellgroesse"
-	DstPort			1
-      }
-    }
-    Line {
       SrcBlock		      "Add"
       SrcPort		      1
       DstBlock		      "Sum"
@@ -896,19 +759,27 @@ Model {
     Line {
       SrcBlock		      "Sum"
       SrcPort		      1
-      DstBlock		      "PI Regler"
-      DstPort		      1
+      Points		      [170, 0]
+      Branch {
+	Points			[0, -80]
+	DstBlock		"Stellgroesse"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Analog Output"
+	DstPort			1
+      }
     }
     Line {
       SrcBlock		      "Add1"
       SrcPort		      1
       Points		      [35, 0]
       Branch {
-	Points			[0, 0]
 	DstBlock		"Sum"
 	DstPort			2
       }
       Branch {
+	Points			[195, 0]
 	DstBlock		"Scope_IN"
 	DstPort			1
       }
