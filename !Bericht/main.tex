@@ -44,7 +44,10 @@
   {kapitel2/pictures/},
   {kapitel3/pictures/},
   {kapitel4/pictures/},
-  {kapitel5/pictures/}
+  {kapitel5/pictures/},
+  {kapitel6/pictures/},
+  {kapitel7/pictures/},
+  {kapitel8/pictures/}
 }
 
 % julians einstellungen
@@ -115,6 +118,8 @@ Der Generator arbeitet mit einem Arbeitspunktdruck von 50 Bar bei einer Grundlas
 \end{figure}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \begin{huge}
 Auflistung aller abgegebenen Dateien\\
@@ -122,12 +127,62 @@ Auflistung aller abgegebenen Dateien\\
 \end{huge}
 
 \begin{itemize}
-\item
-\item
-\item
-\item
-\item
+\item \textbf{01\_Vorbereitung}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{02\_Statische\_Kennlinie}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{03\_Steuerverhalten\_Strecke}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{04\_Stoerverhalten\_Strecke}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{05\_Simulation\_Strecke}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{06\_Reglerentwurf}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{07\_Simulation\_Regelkreis}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{08\_Regler\_Reale\_Strecke}
+	\begin{itemize}
+	\item first item
+	\end{itemize}
+	
+\item \textbf{09\_Sonstiges}
+	\begin{itemize}
+	\item Vorgehensweise\_zur\_Erstellung\_Belegarbeit
+	\item Labor-Übung 11 (Simulierte Druckregelstrecke\_2)
+	\end{itemize}
+	
+\item \textbf{10\_Hilfsprogramme}
+	\begin{itemize}
+	\item polkomp.m
+	\item sys\_id
+	\item tf2vn.m
+	\end{itemize}
+
 \end{itemize}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,6 +200,9 @@ Auflistung aller abgegebenen Dateien\\
 \input{kapitel3/ch3.tex} %
 \input{kapitel4/ch4.tex} %
 \input{kapitel5/ch5.tex} %
+\input{kapitel6/ch6.tex} %
+\input{kapitel7/ch7.tex} %
+\input{kapitel8/ch8.tex} %
 
 \newpage
 \listoffigures		%Abbildungsverzeichnis
@@ -159,6 +217,7 @@ Auflistung aller abgegebenen Dateien\\
 \clearpage
 \newpage
 \addcontentsline{toc}{section}{Literatur- und Quellenverzeichnis}
+\nocite{*}
 \bibliographystyle{IEEEtran}
 \bibliography{bhtThesis}
 
