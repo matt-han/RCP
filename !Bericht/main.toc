@@ -11,5 +11,4 @@
 \contentsline {section}{\numberline {6}Entwurf des Reglers}{7}
 \contentsline {section}{\numberline {7}Simulation des Regelkreises mit dem entworfenen Regler}{8}
 \contentsline {section}{\numberline {8}Implementierung des Reglers in den realen Regelkreis}{9}
-\contentsline {section}{\numberline {A}Anhang}{11}
-\contentsline {section}{Literatur- und Quellenverzeichnis}{12}
+\contentsline {section}{Literatur- und Quellenverzeichnis}{11}

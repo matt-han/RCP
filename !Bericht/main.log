@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  18 JUN 2014 16:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  18 JUN 2014 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,14 +981,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 \openout6 = `main.lof'.
 
 
-[10] (./anhang.tex) [11] (./main.bbl) [12
+[10] (./main.bbl) [11
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7349 strings out of 493315
- 98472 string characters out of 6137904
+ 7345 strings out of 493315
+ 98433 string characters out of 6137904
  175992 words of memory out of 5000000
- 10570 multiletter control sequences out of 15000+600000
+ 10569 multiletter control sequences out of 15000+600000
  43316 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,45p,332b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1002,10 +1002,10 @@ cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 340353 bytes).
+Output written on main.pdf (15 pages, 340057 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 149 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
