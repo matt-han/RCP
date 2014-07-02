@@ -39,7 +39,6 @@
 %%
 \graphicspath{
   {pictures/},
-  {einleitung/pictures},
   {kapitel1/pictures/},
   {kapitel2/pictures/},
   {kapitel3/pictures/},
@@ -114,6 +113,8 @@ Der Generator arbeitet mit einem Arbeitspunktdruck von 50 Bar bei einer Grundlas
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=15cm]{elektrischeSchaltung.pdf} 
+		\caption{Elektrische simulierte Druckregelstrecke}
+     \label{RegelObj}
 	\end{center} 
 \end{figure}
 
@@ -129,42 +130,55 @@ Auflistung aller abgegebenen Dateien\\
 \begin{itemize}
 \item \textbf{01\_Vorbereitung}
 	\begin{itemize}
-	\item first item
+	\item \textit{reinraus2007b.mdl}
+	\item \textit{input\_Mittelwert\_Offset.m}
 	\end{itemize}
 	
 \item \textbf{02\_Statische\_Kennlinie}
 	\begin{itemize}
-	\item first item
+	\item \textit{Berechnung\_Kennlinie.m}
+	\item \textit{Statische\_Kennlinie.mdl}
+	\item \textit{Scope\_Out.mat}
+	\item \textit{ScopeIn.mat}
 	\end{itemize}
 	
 \item \textbf{03\_Steuerverhalten\_Strecke}
 	\begin{itemize}
-	\item first item
+	\item \textit{Statische\_Kennlinie.mdl}
+	\item \textit{modell\_sys\_id.mat}
+	\item \textit{Scope\_Out.mat}
+	\item \textit{sprungantwort.mat}
+	\item \textit{UebfktAnalyse.mat}
 	\end{itemize}
 	
 \item \textbf{04\_Stoerverhalten\_Strecke}
 	\begin{itemize}
-	\item first item
+	\item \textit{arbeitspunkt.mdl}
+	\item \textit{stoer\_err.mat}
+	\item \textit{stoerung.mat}
+	\item \textit{StorfktAnalyse.mat}
+
 	\end{itemize}
 	
 \item \textbf{05\_Simulation\_Strecke}
 	\begin{itemize}
-	\item first item
+	\item !!!!! besprechen !!!!!
 	\end{itemize}
 	
 \item \textbf{06\_Reglerentwurf}
 	\begin{itemize}
-	\item first item
+	\item \textit{...}
 	\end{itemize}
 	
 \item \textbf{07\_Simulation\_Regelkreis}
 	\begin{itemize}
-	\item first item
+	\item \textit{simulation\_regelkreis.mdl}
 	\end{itemize}
 	
 \item \textbf{08\_Regler\_Reale\_Strecke}
 	\begin{itemize}
-	\item first item
+	\item \textit{regler\_strecke.mdl}
+	\item \textit{Regler\_und\_reale\_Strecke.mdl}
 	\end{itemize}
 	
 \item \textbf{09\_Sonstiges}

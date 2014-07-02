@@ -6,11 +6,51 @@
 %%
 
 \newpage
-\section{Das Versuch}
+\section{Zu regelndes Objekt kennen lernen}
+Das Objekt was wir regeln sollen handelt sich um einen elektrischen steuerbaren hydraulischen Druckgenerator für den Antrieb einer Arbeitsmaschine. Zu beachten ist das es sich um eine simulierte Druckregelstrecke handelt.\\
+
+Bekannt ist:
+\begin{itemize}
+\item Steuerspannung -10V $\leq u(t) \leq$ 10V, wobei nur der positive Bereich betrachtet wird, weil der Druck von 0 bis einem Maximalwert verstellt wird
+
+\item Die Messgröße $Y_{M}(t)$ wird in Form einer Spannung gemessen
+
+\item Der Verstärkungsfaktor der Messeinrichtung $V_{M}$ beträgt $0,08\frac{V}{Bar}$
+
+\item Bei einer Grundlast liegt der Arbeitspunktdruck bei 50 Bar
+
+\item Die Messeinrichtung hat ein PT1-Verhalten wo die Zeitkonstante vernachlässigt werden kann 
+\end{itemize}
+
+
+Wenn man das Objekt (Abbildung \ref{RegelKreis}) genauer betrachtet, können die Teile eines Standard-Regelkreises erkannt werden:
+\begin{itemize}
+\item $u(t)$ Regelgröße
+\item $y(t)$ Stellgröße
+\item Stelleinrichtung und Regelstrecke
+\end{itemize}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[scale=0.4]{regelkreis.pdf}
+		\caption{Elektrische simulierte Druckregelstrecke mit Standard-Regelkreis}
+       \label{RegelKreis}
+	\end{center} 
+\end{figure}
+
+\newpage
+
+Um alle Größen zu bestimmen/messen und der Reger zu entwickeln wird MATLAB/Simulink eingesetzt. Dies geschieht mit das Tool Real-Time-Workshop und eine A/D-D/A Wandlerkarte.
+
 
 \subsection{Offset}
+Um das System mit dem Rechner zu verbinden wird eine Wandlerkarte eingesetzt. Die Wandlerkarte ist im PC eingebaut. Um Fälschungen im Ergebnis zu umgehen muss der Eingang- und Ausgangsoffset gemessen werden. Um diese Werte zu messen wurde das \textit{reinraus2007b.mdl} Simulinkmodell benutzt.\\
+
+Für den Eingangsoffset der Wandlerkarte wurde ein Display 
 
 
+
+%Für das bestimmen der Offsetwerte haben wir das reinraus2007b.mdl Simulinkmodell benutzt. Bei dem Input wurde ein Display als Offset-Ausgabe benutzt und der entsprechende Gegenoffset über einen Summenpunkt addiert oder subtrahiert. Wichtig hier ist das man die beiden Leitungen die von der Wandlerkarte zur simulierten Druckeregelstrecke gehen miteinander kurz schließt. Für den Output müssen die zwei Leitungen an ein Messgerät angeschlossen werden, dies dann den vorhandenen Offset anzeigt. Im Simulinkmodell wird, wie für den Input, dann der Gegenoffset addiert oder subtrahiert.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% bild einfügen
@@ -19,5 +59,6 @@
 %	\begin{center}
 %		\includegraphics[scale=0.5]{pic.jpg}
 %		\caption{bildbeschreibung - titel}
+%       \label{für referenzen}
 %	\end{center} 
 %\end{figure}
