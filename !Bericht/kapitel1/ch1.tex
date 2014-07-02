@@ -8,9 +8,8 @@
 \newpage
 [Hansert]
 \section{Zu regelndes Objekt kennen lernen}
-Das Objekt was wir regeln sollen handelt sich um einen elektrischen steuerbaren hydraulischen Druckgenerator für den Antrieb einer Arbeitsmaschine. Zu beachten ist das es sich um eine simulierte Druckregelstrecke handelt.\\
+Das Objekt was wir regeln sollen handelt sich um einen elektrischen steuerbaren hydraulischen Druckgenerator für den Antrieb einer Arbeitsmaschine. Zu beachten ist das es sich um eine simulierte Druckregelstrecke handelt. Bekannt ist:
 
-Bekannt ist:
 \begin{itemize}
 \item Steuerspannung -10V $\leq u(t) \leq$ 10V, wobei nur der positive Bereich betrachtet wird, weil der Druck von 0 bis einem Maximalwert verstellt wird
 
@@ -18,7 +17,7 @@ Bekannt ist:
 
 \item Der Verstärkungsfaktor der Messeinrichtung $V_{M}$ beträgt $0,08\frac{V}{Bar}$
 
-\item Bei einer Grundlast liegt der Arbeitspunktdruck bei 50 Bar
+\item Bei einer Grundlast liegt der Arbeitspunktdruck bei $50Bar$
 
 \item Die Messeinrichtung hat ein PT1-Verhalten wo die Zeitkonstante vernachlässigt werden kann 
 \end{itemize}
@@ -47,11 +46,12 @@ Um alle Größen zu bestimmen/messen und der Reger zu entwickeln wird MATLAB/Sim
 \subsection{Offset}
 Um das System mit dem Rechner zu verbinden wird eine Wandlerkarte eingesetzt. Die Wandlerkarte ist im PC eingebaut. Um Fälschungen im Ergebnis zu umgehen muss der Eingang- und Ausgangsoffset gemessen werden. Um diese Werte zu messen wurde das \textit{reinraus2007b.mdl} Simulinkmodell benutzt.\\
 
-Für den Eingangsoffset der Wandlerkarte wurde ein Display für die Ausgabe benutzt. Wichtig ist, dass die Leitungen für die Verbindung von der Wandlerkarte zum System kurzgeschlossen werden. 
+Für den Eingangsoffset der Wandlerkarte wurde ein Display für die Ausgabe benutzt. Wichtig ist, dass die Leitungen für die Verbindung von der Wandlerkarte zum System kurzgeschlossen werden. Auf dieser Weise werden zum Beispiel $5V$ angelegt und diese $5V$ werden vom Ergebnis subtrahiert. Unser Eingangsoffset beträgt $0,1292V$.\\
 
+Um den Ausgangsoffset zu ermitteln werden die zwei Leitungen an ein Voltmeter angeschlossen. Dieser sollte bei kein Offset $0$ zeigen. Im unser Fall konnten wir ein Ausgangsoffset von $0,1050V$ ablesen.\\
 
+Diese beide Werte werden bei Simulationen in den Kapiteln \ref{Kapitel5} und \ref{Kapitel7} jeweils  subtrahiert um die Verfälschung von Ergebnisse zu vermeiden.
 
-%Für das bestimmen der Offsetwerte haben wir das reinraus2007b.mdl Simulinkmodell benutzt. Bei dem Input wurde ein Display als Offset-Ausgabe benutzt und der entsprechende Gegenoffset über einen Summenpunkt addiert oder subtrahiert. Wichtig hier ist das man die beiden Leitungen die von der Wandlerkarte zur simulierten Druckeregelstrecke gehen miteinander kurz schließt. Für den Output müssen die zwei Leitungen an ein Messgerät angeschlossen werden, dies dann den vorhandenen Offset anzeigt. Im Simulinkmodell wird, wie für den Input, dann der Gegenoffset addiert oder subtrahiert.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% bild einfügen

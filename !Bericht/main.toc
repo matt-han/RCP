@@ -3,12 +3,12 @@
 \contentsline {subsection}{\numberline {1.1}Offset}{3}
 \contentsline {section}{\numberline {2}Festlegung des Arbeitpunktes}{4}
 \contentsline {subsection}{\numberline {2.1}Statisches Verhalten}{4}
-\contentsline {section}{\numberline {3}Messtechnische Identifikation des Steuerverhaltens der Strecke}{5}
-\contentsline {subsection}{\numberline {3.1}Dynamisches Verhalten}{5}
-\contentsline {subsection}{\numberline {3.2}Identifikation der Strecke}{5}
-\contentsline {section}{\numberline {4}Messtechnische Identifikation des St\IeC {\"o}rverhaltens der Stecke}{6}
-\contentsline {section}{\numberline {5}Simulation des Steuer- und St\IeC {\"o}rverhaltens der Strecke}{7}
-\contentsline {section}{\numberline {6}Entwurf des Reglers}{8}
-\contentsline {section}{\numberline {7}Simulation des Regelkreises mit dem entworfenen Regler}{9}
-\contentsline {section}{\numberline {8}Implementierung des Reglers in den realen Regelkreis}{10}
-\contentsline {section}{Literatur- und Quellenverzeichnis}{12}
+\contentsline {section}{\numberline {3}Messtechnische Identifikation des Steuerverhaltens der Strecke}{6}
+\contentsline {subsection}{\numberline {3.1}Dynamisches Verhalten}{6}
+\contentsline {subsection}{\numberline {3.2}Identifikation der Strecke}{6}
+\contentsline {section}{\numberline {4}Messtechnische Identifikation des St\IeC {\"o}rverhaltens der Stecke}{7}
+\contentsline {section}{\numberline {5}Simulation des Steuer- und St\IeC {\"o}rverhaltens der Strecke}{8}
+\contentsline {section}{\numberline {6}Entwurf des Reglers}{9}
+\contentsline {section}{\numberline {7}Simulation des Regelkreises mit dem entworfenen Regler}{10}
+\contentsline {section}{\numberline {8}Implementierung des Reglers in den realen Regelkreis}{11}
+\contentsline {section}{Literatur- und Quellenverzeichnis}{13}
