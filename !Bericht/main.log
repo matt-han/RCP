@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  2 JUL 2014 13:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.17)  2 JUL 2014 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -994,17 +994,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
 ) (./kapitel2/ch2.tex [3 <./kapitel1/pictures/regelkreis.pdf>])
 (./kapitel3/ch3.tex [4]
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) (./kapitel4/ch4.tex [5]) (./kapitel5/ch5.tex [6]) (./kapitel6/ch6.tex
-[7]) (./kapitel7/ch7.tex [8]) (./kapitel8/ch8.tex [9]) [10] (./main.lof)
+) (./kapitel4/ch4.tex [5]
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+) (./kapitel5/ch5.tex [6]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+) (./kapitel6/ch6.tex [7]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+) (./kapitel7/ch7.tex [8]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+) (./kapitel8/ch8.tex [9]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+) [10] (./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[11] (./main.bbl) [12
+ [11] (./main.bbl) [12
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
@@ -1025,7 +1053,7 @@ cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (17 pages, 394988 bytes).
+Output written on main.pdf (17 pages, 395118 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
