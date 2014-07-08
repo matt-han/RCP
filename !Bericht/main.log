@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  6 JUL 2014 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.8)  8 JUL 2014 14:28
 entering extended mode
 **main.tex
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.tex
+(E:\GitHub\RCP\!Bericht\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,9 +13,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,38 +30,38 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\bhtThesis.sty
+(E:\GitHub\RCP\!Bericht\bhtThesis.sty
 Package: bhtThesis 2010/07/21 v0.1 Beuth-Hochschule Abschlussarbeit-Style
 
 2010/07/21 v0.1 BHT-Thesis-Style, S. Tschirley, tschirley@bht-berlin.de
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -69,7 +69,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen105
 \extrarowheight=\dimen106
@@ -77,7 +77,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@col@width=\dimen107
 \TX@old@table=\dimen108
@@ -87,7 +87,7 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@cols=\count88
 \TX@ftn=\toks16
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count89
 \mult@box=\box26
@@ -135,10 +135,10 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box51
 \multicol@sort@counter=\count97
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -152,10 +152,10 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\fancyunits.sty
+(E:\GitHub\RCP\!Bericht\fancyunits.sty
 Package: fancyunits 2004/05/02 v1.0 for type setting units
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -170,7 +170,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 266.
@@ -236,15 +236,15 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen120
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\changebar\changebar.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\changebar\changebar.sty"
 Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
 \cb@nextpoint=\count98
 \cb@topleft=\count99
@@ -270,19 +270,19 @@ Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
 \cb@write=\write4
 \cb@read=\read2
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -432,7 +432,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -463,7 +463,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -479,7 +479,7 @@ Now handling font encoding U ...
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -562,19 +562,19 @@ File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\ngermanb.ldf"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\ngermanb.ldf"
 Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count108
 \U@D=\dimen127
@@ -582,56 +582,56 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@naustrian = a dialect from \language\l@ngerman 
 Package babel Info: Making " an active character on input line 92.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ae\ae.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\ae.sty"
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen128
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count109
@@ -673,7 +673,7 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 BHT style for pdfLaTeX is used
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip53
 \f@ncyO@elh=\skip54
 \f@ncyO@erh=\skip55
@@ -685,10 +685,10 @@ BHT style for pdfLaTeX is used
 \f@ncyO@orf=\skip61
 ))
 Deckblatt
-("C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count121
@@ -710,7 +710,7 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count137
 \c@blind@pangrammax=\count138
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count139
 \lst@gtempboxa=\box54
 \lst@token=\toks24
@@ -724,25 +724,25 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \lst@lineno=\count144
 \lst@maxwidth=\dimen139
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count145
 \lst@skipnumbers=\count146
 \lst@framebox=\box55
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2013/08/26 1.5b listings configuration
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
-Package: listings 2013/08/26 1.5b (Carsten Heinz)
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\trsym\trsym.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\trsym\trsym.sty"
 Package: trsym 2000/06/25v1.0transformation symbol font
 \symtransfsymbol=\mathgroup6
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\bytefield\bytefield.sty"
-Package: bytefield 2011/06/19 v2.1 Network protocol diagrams
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bytefield\bytefield.sty"
+Package: bytefield 2014/06/03 v2.2 Network protocol diagrams
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count147
 \calc@Bcount=\count148
@@ -776,7 +776,7 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \label@box@height=\skip79
 \word@label@box=\box58
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip80
 \LTright=\skip81
@@ -798,7 +798,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 LaTeX Warning: Unused global option(s):
     [parskip=half].
 
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.aux)
+(E:\GitHub\RCP\!Bericht\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
@@ -814,16 +814,16 @@ LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 76.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count157
 \scratchdimen=\dimen143
@@ -838,7 +838,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \everyMPtoPDFconversion=\toks27
 )
 \c@lstlisting=\count163
- (C:\Users\joas\Documents\GitHub\RCP\!Bericht\titlepage_julian.tex
+ (E:\GitHub\RCP\!Bericht\titlepage_julian.tex
 <pictures/BHT-Logo-Basis.pdf, id=1, 303.39667pt x 99.95987pt>
 File: pictures/BHT-Logo-Basis.pdf Graphic file (type pdf)
 
@@ -849,22 +849,22 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+trsy on input line 34.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\trsym\utrsy.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\trsym\utrsy.fd"
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/joas/Documents/G
-itHub/RCP/!Bericht/pictures/BHT-Logo-Basis.pdf>])
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/GitHub/RCP/!Bericht/pi
+ctures/BHT-Logo-Basis.pdf>])
 Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
@@ -891,7 +891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 103.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 <pictures/elektrischeSchaltung.pdf, id=38, 597.23125pt x 845.1575pt>
@@ -901,8 +901,7 @@ File: pictures/elektrischeSchaltung.pdf Graphic file (type pdf)
 Package pdftex.def Info: pictures/elektrischeSchaltung.pdf used on input line 1
 16.
 (pdftex.def)             Requested size: 426.79134pt x 603.97353pt.
- [1] [2 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/pictures/elektrischeSchalt
-ung.pdf>]
+ [1] [2 <E:/GitHub/RCP/!Bericht/pictures/elektrischeSchaltung.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
@@ -912,10 +911,10 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 [3] [4]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 208.
- (C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.toc)
+ (E:\GitHub\RCP\!Bericht\main.toc)
 \tf@toc=\write5
 
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel1/ch1.tex [1]
+(E:\GitHub\RCP\!Bericht\kapitel1/ch1.tex [1]
 Overfull \hbox (15.10298pt too wide) in paragraph at lines 26--27
 []\T1/ptm/m/n/10.95 Wenn man das Ob-jekt (Ab-bil-dung 2[]) ge-nau-er be-trach-t
 et, kön-nen die Tei-le ei-nes Standard-Regelkreises
@@ -928,8 +927,7 @@ File: kapitel1/pictures/regelkreis.pdf Graphic file (type pdf)
 Package pdftex.def Info: kapitel1/pictures/regelkreis.pdf used on input line 35
 .
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
- [2 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel1/pictures/regelkreis.p
-df>]
+ [2 <E:/GitHub/RCP/!Bericht/kapitel1/pictures/regelkreis.pdf>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
 
@@ -947,7 +945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-) (C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel2/ch2.tex [3]
+) (E:\GitHub\RCP\!Bericht\kapitel2/ch2.tex [3]
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
@@ -985,45 +983,43 @@ t line 48.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel3/ch3.tex [4 <C:/Users/jo
-as/Documents/GitHub/RCP/!Bericht/kapitel2/pictures/scope_out.jpg> <C:/Users/joa
-s/Documents/GitHub/RCP/!Bericht/kapitel2/pictures/scope_in.jpg>] [5 <C:/Users/j
-oas/Documents/GitHub/RCP/!Bericht/kapitel2/pictures/Statische_Kennlinie.jpg>]
+) (E:\GitHub\RCP\!Bericht\kapitel3/ch3.tex [4 <E:/GitHub/RCP/!Bericht/kapitel2/
+pictures/scope_out.jpg> <E:/GitHub/RCP/!Bericht/kapitel2/pictures/scope_in.jpg>
+] [5 <E:/GitHub/RCP/!Bericht/kapitel2/pictures/Statische_Kennlinie.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-) (C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel4/ch4.tex [6])
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel5/ch5.tex [7])
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel6/ch6.tex [8])
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel7/ch7.tex [9])
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel8/ch8.tex [10]) [11]
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.lof)
+) (E:\GitHub\RCP\!Bericht\kapitel4/ch4.tex [6])
+(E:\GitHub\RCP\!Bericht\kapitel5/ch5.tex [7])
+(E:\GitHub\RCP\!Bericht\kapitel6/ch6.tex [8])
+(E:\GitHub\RCP\!Bericht\kapitel7/ch7.tex [9])
+(E:\GitHub\RCP\!Bericht\kapitel8/ch8.tex [10]) [11]
+(E:\GitHub\RCP\!Bericht\main.lof)
 \tf@lof=\write6
- [12]
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.bbl) [13
+ [12] (E:\GitHub\RCP\!Bericht\main.bbl)
+[13
 
-]
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.aux) ) 
+] (E:\GitHub\RCP\!Bericht\main.aux) ) 
 Here is how much of TeX's memory you used:
- 6966 strings out of 493921
- 92649 string characters out of 3147285
- 161686 words of memory out of 3000000
- 10045 multiletter control sequences out of 15000+200000
- 43316 words of font info for 74 fonts, out of 3000000 for 9000
+ 6986 strings out of 493921
+ 92870 string characters out of 3144877
+ 161983 words of memory out of 3000000
+ 10065 multiletter control sequences out of 15000+200000
+ 49996 words of font info for 78 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 35i,11n,45p,431b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTe
-X 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on main.pdf (18 pages, 518216 bytes).
+ 35i,11n,45p,693b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/e
+nc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (18 pages, 521683 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

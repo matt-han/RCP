@@ -8,4 +8,21 @@
 \newpage
 
 [Burde]
+
 \section{Entwurf des Reglers}
+
+Nachdem nun die Strecke zunächst identifiziert und anschließend das Steuer- und Störverhalten simuliert wurde, soll nun der passende Regler entworfen werden. Der Regler hat dabei folgende Aufgaben: Er soll dafür sorgen, dass die Regelgeschwindigkeit des Regelkreises möglichst hoch wird und er soll bleibende Regelabweichungen verhindern, also eine hohe Regelgenauigkeit vorweisen.
+
+Die Entscheidung fällt zunächst einmal auf einen PI-Regler. Der P-Anteil sorgt für eine hohe Regelgeschwindigkeit und kompensiert somit die Trägheit des I-Anteils. Gleichzeitig sorgt jedoch der I-Anteil dafür, dass die durch den P-Anteil entstehende bleibende Regelabweichung entfernt wird. 
+
+Um den Verstärkungsfaktor V und die Reglerzeitkonstante T optimal bestimmen zu können, wird als Entwurfsverfahren das Polkompensationsverfahren gewählt. Wie der Name schon aussagt, lassen sich bei diesem Verfahren Verzögerungsglieder aus der Strecke bzw. Messeinrichtung durch eventuelle Vorhalteglieder aus dem gewählten Regler kompensieren. Verzögerungsglieder sorgen meist für ein langsameres Ausregeln von Störgrößen und sind daher unerwünscht. Die nachfolgenden Übertragungsfunktionen vom PI-Regler sowie von der Strecke zeigen das Vorhalteglied des Reglers, welches das markierte Verzögerungsglied der Strecke kompensieren soll. 
+
+\begin{center}
+$ G_{R}(s) = \dfrac{V*\textbf{(1+sT)}}{s} $
+\end{center}
+
+\begin{center}
+$ G_{S}(s) = \dfrac{1,03}{(1 + 0,003365s) * \textbf{(1 + 0,1864s)} * (1 + 2*0,98029s + (0,091032s)^{2}) }$
+\end{center}
+
+Die Zählerzeitkonstante des PI-Reglers beträgt also $ T = 0,1864[sek] $. Um den Verstärkungsfaktor des Reglers zu bestimmen, muss nun das Bodediagramm des offenen Regelkreises gezeichnet werden. Da der Aufwand dafür recht hoch ist, haben wir die Polkompensation mit dem Matlab-Programm \textit{polkomp} durchgeführt.
