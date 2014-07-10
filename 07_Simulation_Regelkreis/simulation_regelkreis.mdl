@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.37"
+    ComputedModelVersion    "1.38"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -42,11 +42,11 @@ Model {
   Creator		  "Matze"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Student"
+  LastModifiedBy	  "Matze"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jun 16 14:23:28 2014"
+  LastModifiedDate	  "Thu Jul 10 21:56:49 2014"
   RTWModifiedTimeStamp	  0
-  ModelVersionFormat	  "1.%<AutoIncrement:37>"
+  ModelVersionFormat	  "1.%<AutoIncrement:38>"
   ConfigurationManager	  "None"
   SimulationMode	  "normal"
   LinearizationMsg	  "none"
@@ -540,6 +540,9 @@ Model {
       InitialOutput	      "[]"
     }
     Block {
+      BlockType		      Reference
+    }
+    Block {
       BlockType		      Scope
       ModelBased	      off
       TickLabels	      "OneTimeTick"
@@ -555,12 +558,6 @@ Model {
       Decimation	      "1"
       SampleInput	      off
       SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      "S-Function"
-      FunctionName	      "system"
-      SFunctionModules	      "''"
-      PortCounts	      "[]"
     }
     Block {
       BlockType		      Step
@@ -649,7 +646,7 @@ Model {
   }
   System {
     Name		    "simulation_regelkreis"
-    Location		    [2, 82, 928, 988]
+    Location		    [2, 82, 972, 988]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    212
@@ -666,7 +663,7 @@ Model {
     Block {
       BlockType		      Step
       Name		      "-1_Step"
-      Position		      [395, 265, 425, 295]
+      Position		      [395, 320, 425, 350]
       Time		      "9"
       After		      "-1"
       SampleTime	      "0"
@@ -674,7 +671,7 @@ Model {
     Block {
       BlockType		      Step
       Name		      "1_Step"
-      Position		      [395, 205, 425, 235]
+      Position		      [395, 260, 425, 290]
       Time		      "4.5"
       SampleTime	      "0"
     }
@@ -682,7 +679,7 @@ Model {
       BlockType		      Sum
       Name		      "Add2"
       Ports		      [2, 1]
-      Position		      [500, 247, 530, 278]
+      Position		      [500, 302, 530, 333]
       CollapseMode	      "All dimensions"
       InputSameDT	      off
       OutDataTypeMode	      "Inherit via internal rule"
@@ -726,14 +723,14 @@ Model {
     }
     Block {
       BlockType		      SubSystem
-      Name		      "PI Regler1"
+      Name		      "PI Regler"
       Ports		      [1, 1]
       Position		      [305, 474, 405, 516]
       MinAlgLoopOccurrences   off
       RTWSystemCode	      "Auto"
       FunctionWithSeparateData off
       System {
-	Name			"PI Regler1"
+	Name			"PI Regler"
 	Location		[204, 87, 703, 943]
 	Open			off
 	ModelBrowserVisibility	off
@@ -827,7 +824,7 @@ Model {
       BlockType		      Scope
       Name		      "Sprung Stoerung"
       Ports		      [1]
-      Position		      [570, 184, 600, 216]
+      Position		      [570, 239, 600, 271]
       Floating		      off
       Location		      [123, 482, 834, 869]
       Open		      off
@@ -847,7 +844,7 @@ Model {
       BlockType		      SubSystem
       Name		      "Stoerung"
       Ports		      [1, 1]
-      Position		      [575, 244, 675, 286]
+      Position		      [575, 299, 675, 341]
       MinAlgLoopOccurrences   off
       RTWSystemCode	      "Auto"
       FunctionWithSeparateData off
@@ -956,7 +953,7 @@ Model {
       BlockType		      Scope
       Name		      "Störung_Stellgrösse_Sprungantwort"
       Ports		      [3]
-      Position		      [820, 408, 850, 442]
+      Position		      [845, 408, 875, 442]
       Floating		      off
       Location		      [1, 45, 1281, 995]
       Open		      off
@@ -1138,7 +1135,7 @@ Model {
       VarVal		      "1"
       RepMode		      "Not repeatable"
       rawSeed		      "1"
-      IsInherit		      off
+      IsInherit		      "off"
       SampMode		      "Discrete"
       SampTime		      "1"
       SampFrame		      "1"
@@ -1184,12 +1181,12 @@ Model {
       SrcPort		      1
       Points		      [10, 0]
       Branch {
-	Points			[0, 215]
+	Points			[0, 160]
 	DstBlock		"Add3"
 	DstPort			1
       }
       Branch {
-	Points			[100, 0; 0, 150]
+	Points			[100, 0; 0, 95]
 	DstBlock		"Störung_Stellgrösse_Sprungantwort"
 	DstPort			1
       }
@@ -1220,7 +1217,7 @@ Model {
       SrcPort		      1
       Points		      [5, 0]
       Branch {
-	DstBlock		"PI Regler1"
+	DstBlock		"PI Regler"
 	DstPort			1
       }
       Branch {
@@ -1230,7 +1227,7 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "PI Regler1"
+      SrcBlock		      "PI Regler"
       SrcPort		      1
       Points		      [75, 0]
       Branch {
