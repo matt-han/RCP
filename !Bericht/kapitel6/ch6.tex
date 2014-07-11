@@ -11,7 +11,7 @@
 
 \section{Entwurf des Reglers}
 
-Nachdem nun die Strecke zunächst identifiziert und anschließend das Steuer- und Störverhalten simuliert wurde, soll nun der passende Regler entworfen werden. Der Regler hat dabei folgende Aufgaben: Er soll dafür sorgen, dass die Regelgeschwindigkeit des Regelkreises möglichst hoch wird, also eine möglichst kleine Anstiegszeit $t_{r}$ und er soll bleibende Regelabweichungen verhindern, also eine hohe Regelgenauigkeit vorweisen.
+Nachdem nun die Strecke zunächst identifiziert und anschließend das Steuer- und Störverhalten simuliert wurde, soll nun der passende Regler entworfen werden. Der Regler hat dabei folgende Aufgaben: Er soll dafür sorgen, dass die Regelgeschwindigkeit des Regelkreises möglichst hoch wird, also eine möglichst kleine Anstiegszeit $t_{r}$ besitzt und er soll bleibende Regelabweichungen verhindern, also eine hohe Regelgenauigkeit vorweisen.
 
 Die Entscheidung fällt zunächst einmal auf einen PI-Regler. Der P-Anteil sorgt für eine hohe Regelgeschwindigkeit und kompensiert somit die Trägheit des I-Anteils. Gleichzeitig sorgt jedoch der I-Anteil dafür, dass die durch den P-Anteil entstehende bleibende Regelabweichung entfernt wird. 
 
@@ -49,7 +49,7 @@ Das Matlab-Programm \textit{polkomp} zeichnet uns nun das Bodediagramm des offen
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[scale=0.4]{bodediagramm_offener_regelkreis.jpg}
+		\includegraphics[scale=0.45]{bodediagramm_offener_regelkreis.jpg}
 		\caption{Bodediagramm des offenen Regelkreises mit $V_{R}=1$}
        \label{bode}
 	\end{center} 
