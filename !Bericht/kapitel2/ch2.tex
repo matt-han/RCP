@@ -10,7 +10,7 @@
 [Hansert]
 \section{Festlegung des Arbeitpunktes}
 
-Laut Aufgabestellung liegt der Arbeitspunktdruck bei einer Grundlast bei $50Bar$. Da unser System ein Spannungsbereich 0 bis 10V beträgt, müssen wir den Druck in einer Spannung übersetzen.
+Laut Aufgabestellung liegt der Arbeitspunktdruck bei einer Grundlast bei $50Bar$. Da unser System einen Spannungsbereich von 0 bis $10V$ besitzt, müssen wir den Druck in eine Spannung übersetzen.
 
 $Arbeitspunkt = Arbeitspunktdruck * Verstaerkung$\\
 $Arbeitspunkt = 50Bar * 0,08V/Bar$\\
@@ -21,7 +21,7 @@ Um den Arbeitspunkt zu ermitteln muss zuerst das Verhalten des Systems festgeste
 
 
 \subsection{Statisches Verhalten}
-Um die Kennlinie des Systems zu ermitteln wird, mithilfe des Simulinkmodells \textit{Statische\_Kennlinie.mdl}, eine sprungförmige Erregung mit 20 Schritte, wo bei jeden Schritt $t= sek$ die Spannung um $0,5V$ erhöht wird. $t$ wurde so gewählt dass das System einen stationären Zustand erreicht bevor es neu angeregt wird (Siehe Abbildung \ref{ScopOut} und \ref{ScopIn}).
+Um die Kennlinie des Systems zu ermitteln wird, mithilfe des Simulinkmodells \textit{Statische\_Kennlinie.mdl}, eine sprungförmige Erregung mit 20 Schritten, bei jedem Schritt $t= sek$ die Spannung um $0,5V$ erhöht. $t$ wurde so gewählt dass das System einen stationären Zustand erreicht, bevor es neu angeregt wird (Siehe Abbildung \ref{ScopOut} und \ref{ScopIn}).
 
 \begin{figure}[h]
 	\begin{center}
@@ -40,7 +40,7 @@ Um die Kennlinie des Systems zu ermitteln wird, mithilfe des Simulinkmodells \te
 	\end{center} 
 \end{figure}
 
-Die Antwort wird in die Matrix \textit{ScopeIn.mat} gespeichert und mit dem MATLAB Script \textit{Berechnung\_Kennlinie.m} die statische Kennlinie berechnet und gezeichnet (siehe Abbildung \ref{StatKenn}). Um Fehler zu vermeiden haben wir uns entschieden ein Durchschnittswert zu berechnen, dieser besteht aus 20 Werte bevor das System neu erregt wird.
+Die Antwort wird in der Matrix \textit{ScopeIn.mat} gespeichert und mit dem MATLAB Script \textit{Berechnung\_Kennlinie.m} wird die statische Kennlinie berechnet und gezeichnet (siehe Abbildung \ref{StatKenn}). Um Fehler zu vermeiden haben wir uns dazu entschieden einen Durchschnittswert zu berechnen, dieser besteht aus 20 Werten bevor das System neu erregt wird.
 
 
 \begin{figure}[h]
@@ -51,4 +51,4 @@ Die Antwort wird in die Matrix \textit{ScopeIn.mat} gespeichert und mit dem MATL
 	\end{center} 
 \end{figure}
 
-In der Abbildung \ref{StatKenn} ist deutlich zu erkennen, dass es sich um eine lineares System handelt, weil die Verstärkung konstant bleibt.
+In der Abbildung \ref{StatKenn} ist deutlich zu erkennen, dass es sich um eine lineares System handelt, da die Verstärkung konstant bleibt.
