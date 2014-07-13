@@ -6,11 +6,11 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Statische Kennlinie, Ausgang $y(t)/V$, Eingang $u(t)/V$}}{5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Sprungantwort - dynamische Kennlinie}}{6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Tool \textit {sis\_id} f\IeC {\"u}r Identifikation der Strecke}}{7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Strecke mit St\IeC {\"o}rung}}{7}
-\contentsline {figure}{\numberline {9}{\ignorespaces erster Ausschnitt \IeC {\"U}bertraungsfunktion mit St\IeC {\"o}rung}}{8}
+\contentsline {figure}{\numberline {8}{\ignorespaces Strecke mit St\IeC {\"o}rung}}{8}
+\contentsline {figure}{\numberline {9}{\ignorespaces erster Ausschnitt \IeC {\"U}bertraungsfunktion mit St\IeC {\"o}rung}}{9}
 \contentsline {figure}{\numberline {10}{\ignorespaces zweiter Ausschnitt \IeC {\"U}bertraungsfunktion mit St\IeC {\"o}rung}}{9}
 \contentsline {figure}{\numberline {11}{\ignorespaces Simulink Simulationstrecke mit St\IeC {\"o}rung}}{10}
-\contentsline {figure}{\numberline {12}{\ignorespaces Systemantwort Simulationstrecke mit St\IeC {\"o}rung}}{11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Systemantwort Simulationstrecke mit St\IeC {\"o}rung}}{10}
 \contentsline {figure}{\numberline {13}{\ignorespaces Bodediagramm des offenen Regelkreises mit $V_{R}=1$}}{12}
 \contentsline {figure}{\numberline {14}{\ignorespaces Berechnete Reglerdaten mit Hilfe von \textit {polkomp}}}{13}
 \contentsline {figure}{\numberline {15}{\ignorespaces F\IeC {\"u}hrungssprungantwort und Stellgr\IeC {\"o}\IeC {\ss }e des ermittelten PI-Reglers}}{14}

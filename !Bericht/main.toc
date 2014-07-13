@@ -6,9 +6,9 @@
 \contentsline {section}{\numberline {3}Messtechnische Identifikation des Steuerverhaltens der Strecke}{6}
 \contentsline {subsection}{\numberline {3.1}Dynamisches Verhalten}{6}
 \contentsline {subsection}{\numberline {3.2}Identifikation der Strecke}{6}
-\contentsline {section}{\numberline {4}Messtechnische Identifikation des St\IeC {\"o}rverhaltens der Strecke}{7}
-\contentsline {section}{\numberline {5}Simulation des Steuer- und St\IeC {\"o}rverhaltens der Strecke}{9}
-\contentsline {section}{\numberline {6}Entwurf des Reglers}{10}
+\contentsline {section}{\numberline {4}Messtechnische Identifikation des St\IeC {\"o}rverhaltens der Strecke}{8}
+\contentsline {section}{\numberline {5}Simulation des Steuer- und St\IeC {\"o}rverhaltens der Strecke}{10}
+\contentsline {section}{\numberline {6}Entwurf des Reglers}{11}
 \contentsline {section}{\numberline {7}Simulation des Regelkreises mit dem entworfenen Regler}{15}
 \contentsline {section}{\numberline {8}Implementierung des Reglers in den realen Regelkreis}{17}
 \contentsline {section}{Literatur- und Quellenverzeichnis}{20}

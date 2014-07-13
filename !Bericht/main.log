@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  13 JUL 2014 13:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  13 JUL 2014 13:46
 entering extended mode
 **main.tex
 (C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.tex
@@ -996,49 +996,46 @@ File: kapitel3/pictures/sprungantwort.jpg Graphic file (type jpg)
 Package pdftex.def Info: kapitel3/pictures/sprungantwort.jpg used on input line
  40.
 (pdftex.def)             Requested size: 252.56798pt x 111.79237pt.
-
-<kapitel3/pictures/sysid.jpg, id=138, 682.04813pt x 508.14844pt>
+ [6 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel3/pictures/sprungantwor
+t.jpg>]
+<kapitel3/pictures/sysid.jpg, id=141, 682.04813pt x 508.14844pt>
 File: kapitel3/pictures/sysid.jpg Graphic file (type jpg)
 
 <use kapitel3/pictures/sysid.jpg>
-Package pdftex.def Info: kapitel3/pictures/sysid.jpg used on input line 51.
+Package pdftex.def Info: kapitel3/pictures/sysid.jpg used on input line 53.
 (pdftex.def)             Requested size: 341.02322pt x 254.0736pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel4/ch4.tex [6 <C:/Users/jo
-as/Documents/GitHub/RCP/!Bericht/kapitel3/pictures/sprungantwort.jpg>]
-<kapitel4/pictures/stoerung.jpg, id=143, 505.13719pt x 223.58531pt>
+)
+(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel4/ch4.tex [7 <C:/Users/joas
+/Documents/GitHub/RCP/!Bericht/kapitel3/pictures/sysid.jpg>]
+<kapitel4/pictures/stoerung.jpg, id=146, 505.13719pt x 223.58531pt>
 File: kapitel4/pictures/stoerung.jpg Graphic file (type jpg)
 
 <use kapitel4/pictures/stoerung.jpg>
 Package pdftex.def Info: kapitel4/pictures/stoerung.jpg used on input line 15.
 (pdftex.def)             Requested size: 252.56798pt x 111.79237pt.
- [7 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel3/pictures/sysid.jpg> <
-C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel4/pictures/stoerung.jpg>]
-<kapitel4/pictures/stoerung_1_uebfkt.jpg, id=147, 682.04813pt x 508.14844pt>
+ [8 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel4/pictures/stoerung.jpg
+>]
+<kapitel4/pictures/stoerung_1_uebfkt.jpg, id=151, 682.04813pt x 508.14844pt>
 File: kapitel4/pictures/stoerung_1_uebfkt.jpg Graphic file (type jpg)
 
 <use kapitel4/pictures/stoerung_1_uebfkt.jpg>
 Package pdftex.def Info: kapitel4/pictures/stoerung_1_uebfkt.jpg used on input 
-line 32.
-(pdftex.def)             Requested size: 341.02322pt x 254.0736pt.
+line 34.
+(pdftex.def)             Requested size: 272.8144pt x 203.25577pt.
 
-<kapitel4/pictures/stoerung_2_uebfkt.jpg, id=148, 682.04813pt x 508.14844pt>
+<kapitel4/pictures/stoerung_2_uebfkt.jpg, id=152, 682.04813pt x 508.14844pt>
 File: kapitel4/pictures/stoerung_2_uebfkt.jpg Graphic file (type jpg)
 
 <use kapitel4/pictures/stoerung_2_uebfkt.jpg>
 Package pdftex.def Info: kapitel4/pictures/stoerung_2_uebfkt.jpg used on input 
-line 40.
-(pdftex.def)             Requested size: 341.02322pt x 254.0736pt.
+line 42.
+(pdftex.def)             Requested size: 272.8144pt x 203.25577pt.
+)
+(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel5/ch5.tex [9 <C:/Users/joas
+/Documents/GitHub/RCP/!Bericht/kapitel4/pictures/stoerung_1_uebfkt.jpg> <C:/Use
+rs/joas/Documents/GitHub/RCP/!Bericht/kapitel4/pictures/stoerung_2_uebfkt.jpg>]
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel5/ch5.tex [8 <C:/Users/jo
-as/Documents/GitHub/RCP/!Bericht/kapitel4/pictures/stoerung_1_uebfkt.jpg>]
-<kapitel5/pictures/simulink_simo_strecke_err.jpg, id=153, 699.36281pt x 469.755
+<kapitel5/pictures/simulink_simo_strecke_err.jpg, id=156, 699.36281pt x 469.755
 pt>
 File: kapitel5/pictures/simulink_simo_strecke_err.jpg Graphic file (type jpg)
  <use kapitel5/pictures/simulink_simo_strecke_err.jpg>
@@ -1046,25 +1043,17 @@ Package pdftex.def Info: kapitel5/pictures/simulink_simo_strecke_err.jpg used o
 n input line 16.
 (pdftex.def)             Requested size: 349.68054pt x 234.87692pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<kapitel5/pictures/simu_strecke_stoerung.jpg, id=154, 548.0475pt x 325.96782pt>
+<kapitel5/pictures/simu_strecke_stoerung.jpg, id=157, 548.0475pt x 325.96782pt>
 File: kapitel5/pictures/simu_strecke_stoerung.jpg Graphic file (type jpg)
 <use kapitel5/pictures/simu_strecke_stoerung.jpg>
 Package pdftex.def Info: kapitel5/pictures/simu_strecke_stoerung.jpg used on in
 put line 24.
 (pdftex.def)             Requested size: 274.02307pt x 162.9835pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel6/ch6.tex [9 <C:/Users/jo
-as/Documents/GitHub/RCP/!Bericht/kapitel4/pictures/stoerung_2_uebfkt.jpg>]
-[10 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel5/pictures/simulink_sim
-o_strecke_err.jpg>] [11 <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel5/p
-ictures/simu_strecke_stoerung.jpg>]
+)
+(C:\Users\joas\Documents\GitHub\RCP\!Bericht\kapitel6/ch6.tex [10 <C:/Users/joa
+s/Documents/GitHub/RCP/!Bericht/kapitel5/pictures/simulink_simo_strecke_err.jpg
+> <C:/Users/joas/Documents/GitHub/RCP/!Bericht/kapitel5/pictures/simu_strecke_s
+toerung.jpg>] [11]
 <kapitel6/pictures/bodediagramm_offener_regelkreis.jpg, id=165, 964.35281pt x 6
 99.36281pt>
 File: kapitel6/pictures/bodediagramm_offener_regelkreis.jpg Graphic file (type 
@@ -1144,26 +1133,30 @@ Overfull \hbox (5.46959pt too wide) in paragraph at lines 29--30
 (C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.bbl) [20
 
 ]
-(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.aux) ) 
+(C:\Users\joas\Documents\GitHub\RCP\!Bericht\main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  7074 strings out of 493921
  95701 string characters out of 3147285
- 161817 words of memory out of 3000000
+ 161816 words of memory out of 3000000
  10119 multiletter control sequences out of 15000+200000
  43316 words of font info for 74 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  35i,11n,45p,854b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTe
-X 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
-s/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (25 pages, 1948891 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on main.pdf (25 pages, 1950160 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
