@@ -11,7 +11,7 @@
 
 %\begin{figure}[h]
 %	\begin{center}
-%		\includegraphics[scale=0.5]{pic.jpg}
+%		\includegraphics[scale=0.5]{sprungantwort.jpg}
 %		\caption{bildbeschreibung - titel}
 %       \label{für referenzen}
 %	\end{center} 
@@ -32,22 +32,32 @@
 
 
 \subsection{Dynamisches Verhalten}
-um dem arbeitspunk
+
+Zur Ermittlung des dynamischen Verhaltens wird eine Messung durchgeführt, in der die Strecke mit einem Sprung an der Stellgröße erregt wird. Wir wissen bereits, dass der Arbeitspunkt bei $50 bar$ beträgt, daher können wir das System in der Nähe des Arbeitspuntes (mit einem Sprung von $4V$ auf $5V$) erregen.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.5]{sprungantwort.jpg}
+		\caption{Sprungantwort - dynamische Kennlinie}
+       \label{dynsprant}
+	\end{center} 
+\end{figure}
 
 \subsection{Identifikation der Strecke}
-Mit Hilfe des Tools \textit{sis\_id.m} können wir die Strecke identifizieren. Dafür müssen die Vektoren \textit{ySystem} (Sprungantwort), \textit{uerr} (Sprung) und \textit{t} (Zeitachse) im Workspace bekannt sein. Im Tool \textit{sis\_id.m} muss eine Vorauswahl der Übertragungsglieder erfolgen. Da die Sprungantwort am Anfang eine Verzögerung hat, handelt es sich mindestens um ein PT2-Glied. Nach der Berechnung und Ausprobieren von sys\_id ist im Abb. zu sehen, dass am Ende die Strecke aus einem System besteht, das in Reihe PT1, PT2 und PT3 geschaltet ist. Die Parameter der Übertragungsfunktion in V-Normalform können unter im Feld abgelesen werden. Die Übertragungsfunktion kann mit Button "Model speichern" in der Form von Polynom im Workspace abgespeichert werden.
+Mit Hilfe des Tools \textit{sis\_id.m} können wir die Strecke identifizieren. Dafür müssen die Vektoren \textit{ySystem} (Sprungantwort), \textit{uerr} (Sprung) und \textit{t} (Zeitachse) im Workspace bekannt sein. Im Tool \textit{sis\_id.m} muss eine Vorauswahl der Übertragungsglieder erfolgen. Da die Sprungantwort am Anfang eine Verzögerung hat, handelt es sich mindestens um ein PT2-Glied. Nach der Berechnung und Ausprobieren von sys\_id ist im Abb. zu sehen, dass am Ende die Strecke aus einem System besteht, das in Reihe PT1, PT2 und PT3 geschaltet ist. Die Parameter der Übertragungsfunktion in V-Normalform können unter im Feld abgelesen werden. Die Übertragungsfunktion kann mit Button \textit{"Model speichern"} in der Form von Polynom im Workspace abgespeichert werden.
 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.5]{sysid.jpg}
+		\caption{Tool \textit{sis\_id} für Identifikation der Strecke}
+       \label{pic_sis_id}
+	\end{center} 
+\end{figure}
 
-TEST\\
-
-
-sis\_id bild
-
-
-formel aus sis\_id: \\
+Die ermittelte Formel aus dem Tool \textit{sis\_id}: 
 
 $ G(s) = \dfrac{1,03}{(1 + 0,003365s) * (1 + 0,1864s) * (1 + 2*0,98029s + (0,091032s)^{2}) }$
 
-gerundeter wert für pollkom
+Gerundete Formel für Polkompensation:
 
 $ G(s) =  \dfrac{1,03}{0,000005s^{4} + 0,0017s^{3	} + 0,043s^{2} + 0,368s + 1 } $
