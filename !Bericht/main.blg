@@ -1,11 +1,60 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
 The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bhtThesis.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--missing publisher in EIRTscript
 Warning--missing publisher in RCPscript
 Warning--missing publisher in GSTscript
 
 Done.
-(There were 2 warnings)
+You've used 3 entries,
+            4039 wiz_defined-function locations,
+            823 strings with 7450 characters,
+and the built_in function-call counts, 1087 in all, are:
+= -- 65
+> -- 12
+< -- 0
++ -- 6
+- -- 3
+* -- 52
+:= -- 196
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 78
+empty$ -- 133
+format.name$ -- 3
+if$ -- 227
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 15
+newline$ -- 32
+num.names$ -- 3
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 96
+stack$ -- 0
+substring$ -- 0
+swap$ -- 42
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 3
+warning$ -- 3
+while$ -- 3
+width$ -- 4
+write$ -- 43
+(There were 3 warnings)

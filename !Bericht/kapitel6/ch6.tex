@@ -33,7 +33,7 @@ Dafür muss zunächst eine maximale Überschwingweite $M_{P}$ gewählt werden. D
 $ M_{p} = 0,2 $
 \end{center}
 
-Bei einer gewählten Überschwingweite zwischen 0,05 und 0,25 lässt sich mit der Formel (2.3.10a) aus dem Script  "Einführung in die Regelungstechnik" der Phasenrand $\Phi_{r}$ berechnen.
+Bei einer gewählten Überschwingweite zwischen 0,05 und 0,25 lässt sich mit der Formel (2.3.10a) aus dem Script \cite{EIRTscript} der Phasenrand $\Phi_{r}$ berechnen.
 
 \begin{center}
 $\Phi_{r}=69^\circ-106^\circ*M_{p}$
@@ -55,7 +55,7 @@ Das Matlab-Programm \textit{polkomp} zeichnet uns nun das Bodediagramm des offen
 	\end{center} 
 \end{figure}
 
-In Abbildung 6 ist in der Phasenkennlinie bereits der gewünschte Phasenrand von $\Phi_{r}=47,8^\circ$ eingezeichnet. Um diesen Phasenrand entstehen zu lassen, muss an dieser Stelle die Betragskennlinie durch die $0 dB$ Achse gehen. Das kann in diesem Fall mit einer Anhebung der Betragskennlinie um $13dB$ ermöglicht werden. Wählt man einen Reglerverstärkungsfaktor $V_{R}>1$ kann ein Anheben der Betragskennlinie erreicht werden. Mit der Formel (2.3.55) aus dem Script "Einführung in die Regelungstechnik" kann der Reglerverstärkungsfaktor genau berechnet werden. Nachfolgend ist die Ermittlung von $V_{R}$ per Hand dargestellt.
+In Abbildung \ref{bode} ist in der Phasenkennlinie bereits der gewünschte Phasenrand von $\Phi_{r}=47,8^\circ$ eingezeichnet. Um diesen Phasenrand entstehen zu lassen, muss an dieser Stelle die Betragskennlinie durch die $0 dB$ Achse gehen. Das kann in diesem Fall mit einer Anhebung der Betragskennlinie um $13dB$ ermöglicht werden. Wählt man einen Reglerverstärkungsfaktor $V_{R}>1$ kann ein Anheben der Betragskennlinie erreicht werden. Mit der Formel (2.3.55) aus dem Script \cite{EIRTscript} kann der Reglerverstärkungsfaktor genau berechnet werden. Nachfolgend ist die Ermittlung von $V_{R}$ per Hand dargestellt.
 
 \begin{center}
 $V_{R}=10^{\dfrac{VdB}{20dB}}$
@@ -81,7 +81,7 @@ In der folgenden Abbildung werden die Ergebnisse der Ermittlung der Reglerparame
 	\end{center} 
 \end{figure}
 
-Zu beachten ist hier, dass der per \textit{polkomp} ermittelte Reglerverstärkungsfaktor $V_{R}$ der gleiche ist, wie der von uns per Hand berechnete Wert. In Abbildung 15 wird nun die Führungssprungantwort sowie die Stellgröße des ermittelten Reglers abgebildet.
+Zu beachten ist hier, dass der per \textit{polkomp} ermittelte Reglerverstärkungsfaktor $V_{R}$ der gleiche ist, wie der von uns per Hand berechnete Wert. In Abbildung \ref{controller} wird nun die Führungssprungantwort sowie die Stellgröße des ermittelten Reglers abgebildet.
 
 \newpage
 

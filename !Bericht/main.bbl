@@ -21,6 +21,9 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{EIRTscript}
+M.~Ottens, \emph{Einführung in die Regelungstechnik}, 2008.
+
 \bibitem{RCPscript}
 R.~S. Manfred~Ottens, \emph{{Rapid Control Prototyping (Schneller
   Reglerprototypen-Entwurf)}}, 2010.

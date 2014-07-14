@@ -28,12 +28,12 @@
 
 \newpage
 [Perkowski]
-\section{Messtechnische Identifikation des Steuerverhaltens der Strecke}
+\section{Messtechnische Identifikation des Steuerverhaltens der Strecke}\label{Kapitel3}
 
 
 \subsection{Dynamisches Verhalten}
 
-Zur Ermittlung des dynamischen Verhaltens wird eine Messung durchgeführt, in der die Strecke mit einem Sprung an der Stellgröße erregt wird. Wir wissen bereits, dass der Arbeitspunkt bei $50 bar$ beträgt, daher können wir das System in der Nähe des Arbeitspuntes (mit einem Sprung von $4V$ auf $5V$) erregen.
+Zur Ermittlung des dynamischen Verhaltens wird eine Messung durchgeführt, in der das System zum Arbeitspunkt ($4V$) gebracht wird. Wenn das System einen stationären Zustand erreicht hat, wird erneut ein Sprung ($1V$) auf das System gegeben.
 
 \begin{figure}[h]
 	\begin{center}
@@ -43,8 +43,11 @@ Zur Ermittlung des dynamischen Verhaltens wird eine Messung durchgeführt, in de
 	\end{center} 
 \end{figure}
 
+Wie in der Abbildung \ref{dynsprant} zu erkennen ist, bleibt die Verstärkung des Systems im Arbeitspunkt gleich.
+
 \subsection{Identifikation der Strecke}
-Mit Hilfe des Tools \textit{sis\_id.m} können wir die Strecke identifizieren. Dafür müssen die Vektoren \textit{ySystem} (Sprungantwort), \textit{uerr} (Sprung) und \textit{t} (Zeitachse) im Workspace bekannt sein. Im Tool \textit{sis\_id.m} muss eine Vorauswahl der Übertragungsglieder erfolgen. Da die Sprungantwort am Anfang eine Verzögerung hat, handelt es sich mindestens um ein PT2-Glied. Nach der Berechnung und Ausprobieren von sys\_id ist im Abb. zu sehen, dass am Ende die Strecke aus einem System besteht, das in Reihe PT1, PT2 und PT3 geschaltet ist. Die Parameter der Übertragungsfunktion in V-Normalform können unter im Feld abgelesen werden. Die Übertragungsfunktion kann mit Button \textit{"Model speichern"} in der Form von Polynom im Workspace abgespeichert werden.
+Mit Hilfe des Tools \textit{sys\_id.m} können wir die Strecke identifizieren. Dafür müssen die Vektoren \textit{ySystem} (Sprungantwort), \textit{uerr} (Sprung) und \textit{t} (Zeitachse) im Workspace bekannt sein. Im Tool \textit{sys\_id.m} muss eine Vorauswahl der Übertragungsglieder erfolgen. Da die Sprungantwort am Anfang eine Verzögerung hat, handelt es sich mindestens um ein PT2-Glied. Nach der Ausführung von \textit{sys\_id.m} ist in der Benutzeroberfläche (Abbildung \ref{pic_sis_id}) zu sehen, dass die Strecke aus einem System besteht, welches aus in Reihe geschalteten PT1, PT2 und PT3 Gleidern besteht. Die Parameter der Übertragungsfunktion in V-Normalform können abgelesen werden. 
+Mit dem Button \textit{"Model speichern"} kann die Übertragungsfunktion als \textit{.mat} Datei im Workspace abgespeichert werden.
 
 \newpage
 
